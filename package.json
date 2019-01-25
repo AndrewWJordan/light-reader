@@ -1,0 +1,17 @@
+{
+  "name": "light-reader",
+  "version": "1.0.0",
+  "description": "Reads and extracts Lighthouse report data from JSON files.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andrew Jordan",
+  "license": "ISC",
+  "dependencies": {
+    "dateformat": "^3.0.3",
+    "express": "^4.16.4",
+    "nodemon": "^1.18.9",
+    "url": "^0.11.0"
+  }
+}
