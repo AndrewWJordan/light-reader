@@ -6,13 +6,19 @@ const dateFormat = require('dateformat')
 const port = 3000
 
 // include json report
-const report = require("./reports/20190114www_marist_edu_about_presidents_office_speeches_writings_inaugural_address.json")
+const path = "./reports/"
+//const report = require("./reports/20190114www_marist_edu_about_presidents_office_speeches_writings_inaugural_address.json")
 
 var reader = function (req, res, next) {
-  console.log(report.finalUrl)
-  if(report.audits["image-alt"].score == 0) {
-    console.log(report.audits["image-alt"].title)
-  }
+  fs.readdir("./reports", (err, files) => {
+  files.forEach(file => {
+    let report = require(path + file)
+    if(report.audits["image-alt"].score == 0) {
+      console.log(file)
+      console.log(report.audits["image-alt"].title)
+    }
+  });
+})
   next()
 }
 
