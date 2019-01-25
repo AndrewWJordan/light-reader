@@ -1,6 +1,7 @@
 const express = require('express')
 const app = express()
 const fs = require('fs')
+const hbs  = require('express-handlebars');
 const url = require('url')
 const dateFormat = require('dateformat')
 const port = 3000
@@ -26,5 +27,8 @@ app.use(reader)
 
 // include routes
 app.use(require('./controllers'))
+
+app.engine('handlebars', hbs({defaultLayout: 'main'}));
+app.set('view engine', 'handlebars');
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))

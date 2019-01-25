@@ -11,6 +11,7 @@
   "dependencies": {
     "dateformat": "^3.0.3",
     "express": "^4.16.4",
+    "express-handlebars": "^3.0.0",
     "nodemon": "^1.18.9",
     "url": "^0.11.0"
   }

@@ -5,6 +5,10 @@ const router = express.Router()
 router.use(require('./reports'))
 
 // general routes
-router.get('/', (req, res) => res.send('Welcome home.'))
+router.get('/', (req, res) =>
+
+//res.send('Welcome home.')
+res.render('home', {data:'Sample Data'})
+)
 
 module.exports = router
