@@ -1,7 +1,13 @@
 <h1>Report Results</h1>
-
+<p><span class="badge badge-primary">{{reportTotal}}</span> reports</p>
+<hr>
 {{#if reports}}
     {{#each reports}}
-      {{this.report}} | {{this.message}} <br>
+      <a href="{{this.url}}" title="Go to page"> {{this.url}}</a> <br>
+      <strong>Issues</strong> <br>
+      {{this.message}} <br>
+      <strong>Report path</strong> <br>
+      {{this.report}} <br>
+      <hr>
     {{/each}}
 {{/if}}
