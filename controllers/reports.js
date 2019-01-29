@@ -14,17 +14,23 @@ router.get('/results', (req, res) => {
   fs.readdir(path, (err, files) => {
     if (err) return console.log(err)
     files.forEach((file, index) => {
+      let messages = []
       let report = require("." + path + file)
-      if(report.audits["image-alt"].score == 0) {
+      for (i in report.audits) {
+        if(report.audits[i].score == 0) {
+          messages.push(report.audits[i].title)
+        }
+      }
+      if(messages.length > 0) {
         viewModel.reports[index] = {
           report: file,
           url: report.finalUrl,
-          message: report.audits["image-alt"].title
+          message: messages
         }
       }
-      viewModel.reportTotal = index + 1
     })
   })
+  viewModel.reportTotal += viewModel.reports.length
   res.render("results", viewModel)
 })
 
@@ -33,4 +39,5 @@ router.get('/results/:url', (req, res) => {
   res.render("results")
 
 })
+
 module.exports = router
