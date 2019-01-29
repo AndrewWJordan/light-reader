@@ -1,13 +1,35 @@
 <h1>Report Results</h1>
 <p><span class="badge badge-primary">{{reportTotal}}</span> reports</p>
 <hr>
-{{#if reports}}
+<!-- {{#if reports}}
     {{#each reports}}
       <a href="{{this.url}}" title="Go to page"> {{this.url}}</a> <br>
       <strong>Issues</strong> <br>
       {{this.message}} <br>
-      <strong>Report path</strong> <br>
+      <strong>Report</strong> <br>
       {{this.report}} <br>
       <hr>
     {{/each}}
-{{/if}}
+{{/if}} -->
+
+<div class="container-fluid">
+  {{#if reports}}
+      {{#each reports}}
+        <section class="row">
+            <div class="col-md-8">
+                <a href="{{this.url}}" title="Go to page"> {{this.url}}</a>
+            </div>
+            <div class="col-md-4">
+                <div class="btn-group float-right " role="group">
+                    <a class="btn btn-md btn-secondary" href="#">
+                      <i class="fa fa-star" aria-hidden="true"></i> Score</a>
+                    <a class="btn btn-md btn-secondary" href="/results/{{encode this.url}}">
+                        <i class="fa fa-refresh" aria-hidden="true"></i> Run Report</a>
+                    <a class="btn btn-md btn-secondary" href="#">
+                        <i class="fa fa-plus" aria-hidden="true"></i> More Detail</a>
+                </div>
+            </div>
+        </section>
+      {{/each}}
+  {{/if}}
+</div>

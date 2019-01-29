@@ -8,7 +8,17 @@ const port = 3000
 // include routes
 app.use(require('./controllers'))
 
-app.engine('handlebars', hbs({defaultLayout: 'main'}));
+// set templating engine w/ helpers
+app.engine('handlebars', hbs({
+  defaultLayout: 'main',
+  helpers: {
+    encode: function(url) {
+      url = encodeURIComponent(url)
+      return url
+    }
+  }
+}));
+
 app.set('view engine', 'handlebars');
 
 app.listen(port, () => console.log(`Light Reader is listening on port ${port}!`))

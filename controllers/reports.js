@@ -27,4 +27,10 @@ router.get('/results', (req, res) => {
   })
   res.render("results", viewModel)
 })
+
+router.get('/results/:url', (req, res) => {
+  console.log(req.params.url)
+  res.render("results")
+
+})
 module.exports = router
