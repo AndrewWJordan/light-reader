@@ -21,4 +21,4 @@ app.engine('handlebars', hbs({
 
 app.set('view engine', 'handlebars');
 
-app.listen(port, () => console.log(`Light Reader is listening on port ${port}!`))
+app.listen(port, () => console.log(`LightReader is listening on port ${port}!`))

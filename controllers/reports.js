@@ -19,6 +19,7 @@ router.get('/results', (req, res) => {
       for (i in report.audits) {
         if(report.audits[i].score == 0) {
           messages.push(report.audits[i].title)
+          viewModel.reportTotal += 1
         }
       }
       if(messages.length > 0) {
@@ -30,7 +31,6 @@ router.get('/results', (req, res) => {
       }
     })
   })
-  viewModel.reportTotal += viewModel.reports.length
   res.render("results", viewModel)
 })
 
