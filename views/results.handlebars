@@ -9,9 +9,11 @@
                 <a href="{{this.url}}" title="Go to page"> {{this.url}}</a>
                 <div class="container-fluid">
                   <div class="row">
-                    {{#each message}}
-                      {{this}} <br>
-                    {{/each}}
+                    <ul>
+                      {{#each message}}
+                        <li>{{this}} </li>
+                      {{/each}}
+                    </ul>
                   </div>
                 </div>
             </div>
