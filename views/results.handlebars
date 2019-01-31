@@ -2,6 +2,9 @@
 <p><span class="badge badge-primary">{{reportTotal}}</span> reports</p>
 <hr>
 <div class="container-fluid">
+  {{#if status}}
+    <em>{{status}}</em>
+  {{/if}}
   {{#if reports}}
       {{#each reports}}
         <section class="row">

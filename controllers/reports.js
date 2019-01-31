@@ -1,6 +1,8 @@
 const express = require('express')
 const router = express.Router()
 const fs = require('fs')
+const async = require("async")
+const lighthouse = require("../tools/lighthouse-auditor")
 
 // the path of the folder containing the reports
 const path = "./reports/"
@@ -8,9 +10,12 @@ const path = "./reports/"
 router.get('/results', (req, res) => {
   let viewModel = {
         reports: [],
-        reportTotal: 0
+        reportTotal: 0,
+        status: ""
   }
-
+  if(req.status) {
+    viewModel.status = req.status
+  }
   fs.readdir(path, (err, files) => {
     if (err) return console.log(err)
     files.forEach((file, index) => {
@@ -35,8 +40,22 @@ router.get('/results', (req, res) => {
 })
 
 router.get('/results/:url', (req, res) => {
-  console.log(req.params.url)
-  res.render("results")
+  async.waterfall([
+    function(callback) {
+      lighthouse.urls.push(req.params.url)
+      lighthouse.launchAudit(lighthouse.urls).then(result => {
+        console.log("done")
+        callback(null)
+      })
+    },
+    function(callback) {
+      res.redirect("/results")
+    }
+  ],
+  function(err, results) {
+    // stop everything if there is an error
+    console.log(err)
+  })
 
 })
 
