@@ -40,16 +40,19 @@ module.exports = {
         }
         // construct the full file name of the new report
         filename = url.parse(URL).hostname + url.parse(URL).pathname.replace(/[^a-z0-9]/gi, '_').toLowerCase()
+        console.log(filename + '.json')
         // check to see if a report exists already. If so rm it.
-        if(this.oldFile = fs.readdirSync('reports/').filter(fn => fn.endsWith(filename + '.json'))) {
-          try {
-            console.log(this.oldFile)
-            fs.unlinkSync('reports/' + this.oldFile)
-          } catch (error) {
-            console.log(error)
-          }
+        if(fs.readdirSync('reports/').filter(fn => fn.includes(filename + '.json'))) {
+            fs.unlink('reports/' + filename + '.json', (err) => {
+              if (err) {
+                console.log(err)
+              }
+              // if no error, file has been deleted successfully
+              console.log('File deleted!')
+            })
         }
-        filename = dateFormat(this.now, 'yyyymmdd') + filename
+        // append date to filename
+        //filename = dateFormat(this.now, 'yyyymmdd') + filename
         fs.writeFile('reports/' + filename + '.json', results, function(err, result) {
           if(err) {
             console.log('error', err)

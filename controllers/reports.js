@@ -10,33 +10,47 @@ const path = "./reports/"
 router.get('/results', (req, res) => {
   let viewModel = {
         reports: [],
-        reportTotal: 0,
+        reportTotal: null,
+        failTotal: null,
         status: ""
   }
-  if(req.status) {
-    viewModel.status = req.status
-  }
-  fs.readdir(path, (err, files) => {
-    if (err) return console.log(err)
-    files.forEach((file, index) => {
-      let messages = []
-      let report = require("." + path + file)
-      for (i in report.audits) {
-        if(report.audits[i].score == 0) {
-          messages.push(report.audits[i].title)
+  async.waterfall([
+    function(callback) {
+      fs.readdir(path, (err, files) => {
+        if (err) return console.log(err)
+        files.forEach((file, index) => {
           viewModel.reportTotal += 1
-        }
-      }
-      if(messages.length > 0) {
-        viewModel.reports[index] = {
-          report: file,
-          url: report.finalUrl,
-          message: messages
-        }
-      }
-    })
+          let messages = []
+          let report = require("." + path + file)
+          for (i in report.audits) {
+            if(report.audits[i].score == 0) {
+              messages.push(report.audits[i].title)
+            }
+            // viewModel.reportTotal = viewModel.reports.length
+          }
+          if(messages.length > 0) {
+            viewModel.reports[index] = {
+              report: file,
+              url: report.finalUrl,
+              message: messages
+            }
+          }
+        })
+        callback(null)
+      })
+    },
+    function(callback) {
+      viewModel.failTotal = viewModel.reports.length
+      callback(null)
+    },
+    function(callback) {
+      res.render("results", viewModel)
+    }
+  ],
+  function(err, results) {
+    // stop everything if there is an error
+    console.log(err)
   })
-  res.render("results", viewModel)
 })
 
 router.get('/results/:url', (req, res) => {
