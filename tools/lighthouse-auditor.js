@@ -39,7 +39,8 @@ module.exports = {
           fs.mkdirSync("reports/")
         }
         // construct the full file name of the new report
-        filename = url.parse(URL).hostname + url.parse(URL).pathname.replace(/[^a-z0-9]/gi, '_').toLowerCase()
+        filename = url.parse(URL).hostname + url.parse(URL).pathname
+        filename = filename.replace(/[^a-z0-9]/gi, '_').toLowerCase()
         console.log(filename + '.json')
         // check to see if a report exists already. If so rm it.
         if(fs.readdirSync('reports/').filter(fn => fn.includes(filename + '.json'))) {

@@ -1,4 +1,2 @@
 node_modules
 reports-bk
-reports/*
-!reports/README.md
