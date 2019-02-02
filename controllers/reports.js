@@ -30,6 +30,10 @@ router.get('/results', (req, res) => {
           for (i in report.audits) {
             if(report.audits[i].score == 0) {
               messages.push(report.audits[i].title)
+              details = []
+              for (el in report.audits[i].details.items) {
+                details.push(report.audits[i].details.items[el].node.snippet)
+              }
             }
           }
           if(messages.length > 0) {
@@ -37,6 +41,7 @@ router.get('/results', (req, res) => {
               report: file,
               url: report.finalUrl,
               message: messages,
+              detail: details,
               score: report.categories.accessibility.score
             }
           }

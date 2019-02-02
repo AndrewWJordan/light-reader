@@ -1,7 +1,7 @@
 <h1>LightReader Results<br>
   <small class="text-muted">The following pages scored below 100% </small>
 </h1>
-<p><span class="label label-pill label-primary">{{average pageScores}}%</span> Overall audit score <span class="label label-pill label-danger">{{failTotal}} / {{reportTotal}}</span> failed reports</p>
+<p><span class="label label-pill label-primary">{{average pageScores}}%</span> Overall score <span class="label label-pill label-danger">{{failTotal}} / {{reportTotal}}</span> failed reports</p>
 <hr>
 <div class="container-fluid">
   {{#if status}}
@@ -11,12 +11,18 @@
       {{#each reports}}
         <section class="row">
             <div class="col-md-8">
-                <a href="{{this.url}}" target="_blank" rel="noopener noreferrer" title="Go to page"> {{this.url}}</a>
+                <a href="{{this.url}}" target="_blank" rel="noopener noreferrer" title="Go to page"> <strong>{{this.url}}</strong></a>
                 <div class="container-fluid">
                   <div class="row">
                     <ul>
                       {{#each message}}
                         <li>{{this}} </li>
+                      {{/each}}
+                    </ul>
+                    <p>Offending elements:</p>
+                    <ul>
+                      {{#each detail}}
+                        <li><em>{{this}} </em></li>
                       {{/each}}
                     </ul>
                   </div>
