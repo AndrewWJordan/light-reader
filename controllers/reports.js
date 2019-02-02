@@ -12,7 +12,8 @@ router.get('/results', (req, res) => {
         reports: [],
         reportTotal: null,
         failTotal: null,
-        status: ""
+        status: "",
+        pageScores: []
   }
   async.waterfall([
     function(callback) {
@@ -22,6 +23,9 @@ router.get('/results', (req, res) => {
           viewModel.reportTotal += 1
           let messages = []
           let report = require("." + path + file)
+          // get each page's score to calculate overall score
+          viewModel.pageScores.push(report.categories.accessibility.score)
+          // extract failed audits for each page
           for (i in report.audits) {
             if(report.audits[i].score == 0) {
               messages.push(report.audits[i].title)
