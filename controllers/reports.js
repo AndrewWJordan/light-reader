@@ -3,6 +3,7 @@ const router = express.Router()
 const fs = require('fs')
 const async = require("async")
 const lighthouse = require("../tools/lighthouse-auditor")
+const emoji = require('node-emoji')
 
 // the path of the folder containing the reports
 const path = "./reports/"
@@ -53,7 +54,7 @@ router.get('/results', (req, res) => {
   ],
   function(err, results) {
     // stop everything if there is an error
-    console.log(err)
+    console.log(emoji.emojify(":skull: " + err))
   })
 })
 
@@ -62,7 +63,7 @@ router.get('/results/:url', (req, res) => {
     function(callback) {
       lighthouse.urls.push(req.params.url)
       lighthouse.launchAudit(lighthouse.urls).then(result => {
-        console.log("done")
+        console.log(emoji.emojify(":beers: done"))
         callback(null)
       })
     },
@@ -72,7 +73,7 @@ router.get('/results/:url', (req, res) => {
   ],
   function(err, results) {
     // stop everything if there is an error
-    console.log(err)
+    console.log(emoji.emojify(":skull: " + err))
   })
 
 })

@@ -6,6 +6,7 @@ const lighthouse = require('lighthouse')
 const chromeLauncher = require('chrome-launcher')
 const url = require('url')
 const dateFormat = require('dateformat')
+const emoji = require('node-emoji')
 
 module.exports = {
    urls: [],
@@ -46,10 +47,10 @@ module.exports = {
         if(fs.readdirSync('reports/').filter(fn => fn.includes(filename + '.json'))) {
             fs.unlink('reports/' + filename + '.json', (err) => {
               if (err) {
-                console.log(err)
+                console.log(emoji.emojify(":skull: " + err))
               }
               // if no error, file has been deleted successfully
-              console.log('File deleted!')
+              console.log(emoji.emojify(':wastebasket: File deleted!'))
             })
         }
         // append date to filename

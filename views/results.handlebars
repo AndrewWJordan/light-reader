@@ -1,7 +1,7 @@
 <h1>LightReader Results<br>
   <small class="text-muted">The following pages scored below 100% </small>
 </h1>
-<p><span class="badge badge-primary">{{average pageScores}}%</span> Overall audit score <span class="badge badge-primary">{{failTotal}} / {{reportTotal}} </span> failed reports</p>
+<p><span class="label label-pill label-primary">{{average pageScores}}%</span> Overall audit score <span class="label label-pill label-danger">{{failTotal}} / {{reportTotal}}</span> failed reports</p>
 <hr>
 <div class="container-fluid">
   {{#if status}}
@@ -24,10 +24,17 @@
             </div>
             <div class="col-md-4">
                 <div class="btn-group float-right " role="group">
-                    <a class="btn btn-md btn-secondary" href="#">
-                      <i class="fa fa-line-chart" aria-hidden="true"></i> {{convert score}}%</a>
-                    <a class="btn btn-md btn-secondary" href="/results/{{encode this.url}}">
-                        <i class="fa fa-refresh" aria-hidden="true"></i> Run Report</a>
+
+                      <button class="btn btn-primary" type="button">
+                        <!-- <i class="fa fa-line-chart" aria-hidden="true"></i>-->
+                        <span class="badge">{{convert score}}%</span> Page score
+                      </button>
+
+                    <!-- <a href="/results/{{encode this.url}}"> -->
+                      <button class="btn btn-primary" type="button" onclick="location.href='/results/{{encode this.url}}'">
+                        <i class="fa fa-refresh" aria-hidden="true"></i> Run Report
+                      </button>
+                    <!-- </a> -->
                 </div>
             </div>
         </section>
