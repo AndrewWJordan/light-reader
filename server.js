@@ -15,6 +15,10 @@ app.engine('handlebars', hbs({
     encode: function(url) {
       url = encodeURIComponent(url)
       return url
+    },
+    convert: function(score) {
+      score = score * 100
+      return score
     }
   }
 }));

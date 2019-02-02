@@ -26,13 +26,13 @@ router.get('/results', (req, res) => {
             if(report.audits[i].score == 0) {
               messages.push(report.audits[i].title)
             }
-            // viewModel.reportTotal = viewModel.reports.length
           }
           if(messages.length > 0) {
             viewModel.reports[index] = {
               report: file,
               url: report.finalUrl,
-              message: messages
+              message: messages,
+              score: report.categories.accessibility.score
             }
           }
         })
