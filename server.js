@@ -24,7 +24,7 @@ app.engine('handlebars', hbs({
       for(let num of arr) {
         total += parseFloat(num)
       }
-      return total / arr.length * 100
+      return ((total / arr.length) * 100).toFixed(0)
     }
   }
 }))

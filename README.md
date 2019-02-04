@@ -1,13 +1,42 @@
 # LightReader
 
-LightReader is a Lighthouse audit utility that assists you with extracting failed audits from any number of Lighthouse JSON files.  
+LightReader is a Lighthouse utility that reads any number of JSON page audits, extracts the details of each failed audit and displays them.
 
-In the future, reports will be generated via Lighthouse and stored in the reports/
- directory.  The /results page will kickoff LightReader's process of looping through
- each report and extracting the report's failed audits.  It will then display them
- on the /results page for your review.  
+# Features
 
- LightReader will also provide the ability to kickoff another audit of that page right
-  from the same /results page, thus allowing you to confirm the fix.  
+  - Run individual page or whole/batch site audits  
+  - See individual page and combined site scores
+  - Displays failed tests and possible offending elements
+  - Gathers URLs via the URL of your sitemap
 
-This is a work-in-progress. You will need Node and NPM installed.  
+
+# Upcoming features
+  - Dashboarding to track current and historical audit data
+  - CSV exporting
+  - Batch site audits via sitemap URL
+
+## Installation
+
+LightReader requires [Node.js](https://nodejs.org/en/blog/release/v10.0.0/) v10+ to run.
+Install the dependencies and devDependencies and start the server.
+
+```sh
+$ git clone [this project]
+$ cd light-reader
+$ npm install
+```  
+
+## How to run
+
+Run in development with Nodemon logger
+```
+$ npm start
+```  
+Run normally
+```
+node server.js
+```
+
+## How it works
+
+Place your Lighthouse JSON audit files in the ```reports/``` directory.  Start up the application and hit ```/results``` page.  LightReader will loop through each report's JSON and return a list of all the pages that scored below 100%.  It will extract the overall site's score, the individual page scores and details as to which elements may have caused the violation.  Make your chages on your site and rerun the report from that page. 
