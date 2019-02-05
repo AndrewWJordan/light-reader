@@ -20,32 +20,35 @@ router.get('/results', (req, res) => {
     function(callback) {
       fs.readdir(path, (err, files) => {
         if (err) return console.log(err)
-        files.forEach((file, index) => {
-          viewModel.reportTotal += 1
-          let messages = []
-          let report = require("." + path + file)
-          // get each page's score to calculate overall score
-          viewModel.pageScores.push(report.categories.accessibility.score)
-          // extract failed audits for each page
-          for (i in report.audits) {
-            if(report.audits[i].score == 0) {
-              messages.push(report.audits[i].title)
-              details = []
-              for (el in report.audits[i].details.items) {
-                details.push(report.audits[i].details.items[el].node.snippet)
+          files.forEach((file, index) => {
+            // only json files please
+            if(file.substring(file.indexOf('.')+1) == "json") {
+              viewModel.reportTotal += 1
+              let messages = []
+              let report = require("." + path + file)
+              // get each page's score to calculate overall score
+              viewModel.pageScores.push(report.categories.accessibility.score)
+              // extract failed audits for each page
+              for (i in report.audits) {
+                if(report.audits[i].score == 0) {
+                  messages.push(report.audits[i].title)
+                  details = []
+                  for (el in report.audits[i].details.items) {
+                    details.push(report.audits[i].details.items[el].node.snippet)
+                  }
+                }
+              }
+              if(messages.length > 0) {
+                viewModel.reports[index] = {
+                  report: file,
+                  url: report.finalUrl,
+                  message: messages,
+                  detail: details,
+                  score: report.categories.accessibility.score
+                }
               }
             }
-          }
-          if(messages.length > 0) {
-            viewModel.reports[index] = {
-              report: file,
-              url: report.finalUrl,
-              message: messages,
-              detail: details,
-              score: report.categories.accessibility.score
-            }
-          }
-        })
+          })
         callback(null)
       })
     },
