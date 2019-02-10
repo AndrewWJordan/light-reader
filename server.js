@@ -31,4 +31,4 @@ app.engine('handlebars', hbs({
 
 app.set('view engine', 'handlebars')
 
-app.listen(port, () => console.log(emoji.emojify(`:books: LightReader is listening on port ${port}!`)))
+app.listen(port, () => console.log(emoji.emojify(`:books:  LightReader is listening on port ${port}!`)))

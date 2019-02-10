@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <h1>Perform an audit</h1>
+  </div>
+  <div class="row">
+    <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1">Enter URL</label>
+        <input type="text" class="form-control" id="url" aria-describedby="urlHelp" placeholder="https://www.example.com/sitemap">
+        <small id="urlHelp" class="form-text text-muted">Provide the URL of the sitemap for a full site audit.</small>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="page" name="radio" class="custom-control-input">
+        <label class="custom-control-label" for="page">Single page audit</label>
+      </div>
+      <div class="custom-control custom-radio custom-control-inline">
+        <input type="radio" id="site" name="radio" class="custom-control-input">
+        <label class="custom-control-label" for="site">Entire site</label>
+      </div>
+      <div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+  </div>
+</div>
