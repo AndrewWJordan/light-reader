@@ -1,24 +1,37 @@
 <div class="container">
   <div class="row">
     <h1>Perform an audit</h1>
+    <hr/>
   </div>
   <div class="row">
-    <form>
+    <p>Audit an entire site by providing the URL of the website's sitemap. Otherwise just enter
+      the page's URL.
+    </p>
+    <form class="form-inline" action="/audit" method="POST" role="form">
       <div class="form-group">
-        <label for="exampleInputEmail1">Enter URL</label>
-        <input type="text" class="form-control" id="url" aria-describedby="urlHelp" placeholder="https://www.example.com/sitemap">
-        <small id="urlHelp" class="form-text text-muted">Provide the URL of the sitemap for a full site audit.</small>
+        <label for="auditUrl" class="sr-only">Page or sitemap URL </label>
+        <input type="text" class="form-control mb-2 mr-sm-2" name="auditUrl" id="auditUrl" aria-describedby="urlHelp" placeholder="https://www.example.com/sitemap" required>
+        <!-- <small id="urlHelp" class="form-text text-muted">Provide the URL of the sitemap for a full site audit.</small> -->
       </div>
       <div class="custom-control custom-radio custom-control-inline">
-        <input type="radio" id="page" name="radio" class="custom-control-input">
-        <label class="custom-control-label" for="page">Single page audit</label>
+        <input type="radio" id="page" name="radio" value="page" class="custom-control-input mb-2 mr-sm-2" required>
+        <label class="custom-control-label" for="page">Single page</label>
       </div>
       <div class="custom-control custom-radio custom-control-inline">
-        <input type="radio" id="site" name="radio" class="custom-control-input">
+        <input type="radio" id="site" name="radio" value="site" class="custom-control-input mb-2 mr-sm-2" required>
         <label class="custom-control-label" for="site">Entire site</label>
       </div>
       <div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <button type="submit" class="btn btn-primary  mb-2 mr-sm-2">Submit</button>
       </div>
+    </form>
+  </div>
+</div>
+
+<div class="container">
+  <div class="row">
+    {{#if auditUrl}}
+      Site to audit: <em>{{auditUrl}}</em>
+    {{/if}}
   </div>
 </div>
