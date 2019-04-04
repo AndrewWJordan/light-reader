@@ -3,10 +3,10 @@
   "environment": {
     "networkUserAgent": "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5 Build/MRA58N) AppleWebKit/537.36(KHTML, like Gecko) Chrome/71.0.3559.0 Mobile Safari/537.36",
     "hostUserAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/70.0.3538.77 Safari/537.36",
-    "benchmarkIndex": 1186
+    "benchmarkIndex": 1191.6167664670659
   },
   "lighthouseVersion": "4.0.0-alpha.2-3.2.1",
-  "fetchTime": "2019-01-30T03:40:51.909Z",
+  "fetchTime": "2019-04-03T21:57:39.743Z",
   "requestedUrl": "https://www.marist.edu/social-behavioral-sciences/psych/jobs-summer-internships",
   "finalUrl": "https://www.marist.edu/social-behavioral-sciences/psych/jobs-summer-internships",
   "runWarnings": [],
@@ -150,15 +150,46 @@
     },
     "color-contrast": {
       "id": "color-contrast",
-      "title": "Background and foreground colors have a sufficient contrast ratio",
+      "title": "Background and foreground colors do not have a sufficient contrast ratio.",
       "description": "Low-contrast text is difficult or impossible for many users to read. [Learn more](https://dequeuniversity.com/rules/axe/2.2/color-contrast?application=lighthouse).",
-      "score": 1,
+      "score": 0,
       "scoreDisplayMode": "binary",
-      "rawValue": true,
+      "rawValue": false,
       "details": {
         "type": "table",
-        "headings": [],
-        "items": []
+        "headings": [
+          {
+            "key": "node",
+            "itemType": "node",
+            "text": "Failing Elements"
+          }
+        ],
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "selector": "strong > span",
+              "path": "1,HTML,2,BODY,7,DIV,0,DIV,1,DIV,0,DIV,1,DIV,1,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,SECTION,1,DIV,189,P,0,STRONG,0,SPAN",
+              "snippet": "<span style=\"color:#FF0000;\">Application Deadline: April 15, 2019</span>",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.99 (foreground color: #ff0000, background color: #ffffff, font size: 12.0pt, font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": "span > strong",
+              "path": "1,HTML,2,BODY,7,DIV,0,DIV,1,DIV,0,DIV,1,DIV,1,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,SECTION,1,DIV,203,P,0,SPAN,0,STRONG",
+              "snippet": "<strong>Application Deadline: May 17, 2019</strong>",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.99 (foreground color: #ff0000, background color: #ffffff, font size: 12.0pt, font weight: bold). Expected contrast ratio of 4.5:1"
+            }
+          }
+        ],
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143"
+        ]
       }
     },
     "definition-list": {
@@ -207,14 +238,9 @@
       "id": "frame-title",
       "title": "`<frame>` or `<iframe>` elements have a title",
       "description": "Screen reader users rely on frame titles to describe the contents of frames. [Learn more](https://dequeuniversity.com/rules/axe/2.2/frame-title?application=lighthouse).",
-      "score": 1,
-      "scoreDisplayMode": "binary",
-      "rawValue": true,
-      "details": {
-        "type": "table",
-        "headings": [],
-        "items": []
-      }
+      "score": null,
+      "scoreDisplayMode": "not-applicable",
+      "rawValue": true
     },
     "html-has-lang": {
       "id": "html-has-lang",
@@ -244,39 +270,15 @@
     },
     "image-alt": {
       "id": "image-alt",
-      "title": "Image elements do not have `[alt]` attributes",
+      "title": "Image elements have `[alt]` attributes",
       "description": "Informative elements should aim for short, descriptive alternate text. Decorative elements can be ignored with an empty alt attribute. [Learn more](https://dequeuniversity.com/rules/axe/2.2/image-alt?application=lighthouse).",
-      "score": 0,
+      "score": 1,
       "scoreDisplayMode": "binary",
-      "rawValue": false,
+      "rawValue": true,
       "details": {
         "type": "table",
-        "headings": [
-          {
-            "key": "node",
-            "itemType": "node",
-            "text": "Failing Elements"
-          }
-        ],
-        "items": [
-          {
-            "node": {
-              "type": "node",
-              "selector": "ion-icon",
-              "path": "1,HTML,2,BODY,7,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,DIV,0,DIV,1,DIV,0,DIV,0,BUTTON,1,ION-ICON",
-              "snippet": "<ion-icon class=\"icon ion-android-menu hydrated\" role=\"img\"><div class=\"icon-inner\"></div></ion-icon>",
-              "explanation": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\""
-            }
-          }
-        ],
-        "impact": "critical",
-        "tags": [
-          "cat.text-alternatives",
-          "wcag2a",
-          "wcag111",
-          "section508",
-          "section508.22.a"
-        ]
+        "headings": [],
+        "items": []
       }
     },
     "input-image-alt": {
@@ -375,14 +377,9 @@
       "id": "tabindex",
       "title": "No element has a `[tabindex]` value greater than 0",
       "description": "A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more](https://dequeuniversity.com/rules/axe/2.2/tabindex?application=lighthouse).",
-      "score": 1,
-      "scoreDisplayMode": "binary",
-      "rawValue": true,
-      "details": {
-        "type": "table",
-        "headings": [],
-        "items": []
-      }
+      "score": null,
+      "scoreDisplayMode": "not-applicable",
+      "rawValue": true
     },
     "td-headers-attr": {
       "id": "td-headers-attr",
@@ -628,7 +625,7 @@
         },
         {
           "id": "frame-title",
-          "weight": 5,
+          "weight": 0,
           "group": "a11y-describe-contents"
         },
         {
@@ -693,7 +690,7 @@
         },
         {
           "id": "tabindex",
-          "weight": 4,
+          "weight": 0,
           "group": "a11y-correct-attributes"
         },
         {
@@ -767,7 +764,7 @@
         }
       ],
       "id": "accessibility",
-      "score": 0.92
+      "score": 0.93
     }
   },
   "categoryGroups": {
@@ -828,7 +825,7 @@
     }
   },
   "timing": {
-    "total": 6348
+    "total": 5610
   },
   "i18n": {
     "rendererFormattedStrings": {

@@ -3,10 +3,10 @@
   "environment": {
     "networkUserAgent": "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5 Build/MRA58N) AppleWebKit/537.36(KHTML, like Gecko) Chrome/71.0.3559.0 Mobile Safari/537.36",
     "hostUserAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/70.0.3538.77 Safari/537.36",
-    "benchmarkIndex": 1199.6007984031937
+    "benchmarkIndex": 1202
   },
   "lighthouseVersion": "4.0.0-alpha.2-3.2.1",
-  "fetchTime": "2019-01-30T03:06:05.808Z",
+  "fetchTime": "2019-04-03T21:25:15.706Z",
   "requestedUrl": "https://www.marist.edu/liberal-arts/faculty/janine-larmon-peterson",
   "finalUrl": "https://www.marist.edu/liberal-arts/faculty/janine-larmon-peterson",
   "runWarnings": [],
@@ -202,14 +202,9 @@
       "id": "frame-title",
       "title": "`<frame>` or `<iframe>` elements have a title",
       "description": "Screen reader users rely on frame titles to describe the contents of frames. [Learn more](https://dequeuniversity.com/rules/axe/2.2/frame-title?application=lighthouse).",
-      "score": 1,
-      "scoreDisplayMode": "binary",
-      "rawValue": true,
-      "details": {
-        "type": "table",
-        "headings": [],
-        "items": []
-      }
+      "score": null,
+      "scoreDisplayMode": "not-applicable",
+      "rawValue": true
     },
     "html-has-lang": {
       "id": "html-has-lang",
@@ -346,14 +341,9 @@
       "id": "tabindex",
       "title": "No element has a `[tabindex]` value greater than 0",
       "description": "A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more](https://dequeuniversity.com/rules/axe/2.2/tabindex?application=lighthouse).",
-      "score": 1,
-      "scoreDisplayMode": "binary",
-      "rawValue": true,
-      "details": {
-        "type": "table",
-        "headings": [],
-        "items": []
-      }
+      "score": null,
+      "scoreDisplayMode": "not-applicable",
+      "rawValue": true
     },
     "td-headers-attr": {
       "id": "td-headers-attr",
@@ -599,7 +589,7 @@
         },
         {
           "id": "frame-title",
-          "weight": 5,
+          "weight": 0,
           "group": "a11y-describe-contents"
         },
         {
@@ -664,7 +654,7 @@
         },
         {
           "id": "tabindex",
-          "weight": 4,
+          "weight": 0,
           "group": "a11y-correct-attributes"
         },
         {
@@ -799,7 +789,7 @@
     }
   },
   "timing": {
-    "total": 5665
+    "total": 4780
   },
   "i18n": {
     "rendererFormattedStrings": {

@@ -3,10 +3,10 @@
   "environment": {
     "networkUserAgent": "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5 Build/MRA58N) AppleWebKit/537.36(KHTML, like Gecko) Chrome/71.0.3559.0 Mobile Safari/537.36",
     "hostUserAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/70.0.3538.77 Safari/537.36",
-    "benchmarkIndex": 1194
+    "benchmarkIndex": 1199.6007984031937
   },
   "lighthouseVersion": "4.0.0-alpha.2-3.2.1",
-  "fetchTime": "2019-01-30T03:13:53.189Z",
+  "fetchTime": "2019-04-03T21:32:13.064Z",
   "requestedUrl": "https://www.marist.edu/management/graduate/public-admin/who-we-are",
   "finalUrl": "https://www.marist.edu/management/graduate/public-admin/who-we-are",
   "runWarnings": [],
@@ -207,14 +207,9 @@
       "id": "frame-title",
       "title": "`<frame>` or `<iframe>` elements have a title",
       "description": "Screen reader users rely on frame titles to describe the contents of frames. [Learn more](https://dequeuniversity.com/rules/axe/2.2/frame-title?application=lighthouse).",
-      "score": 1,
-      "scoreDisplayMode": "binary",
-      "rawValue": true,
-      "details": {
-        "type": "table",
-        "headings": [],
-        "items": []
-      }
+      "score": null,
+      "scoreDisplayMode": "not-applicable",
+      "rawValue": true
     },
     "html-has-lang": {
       "id": "html-has-lang",
@@ -262,17 +257,8 @@
           {
             "node": {
               "type": "node",
-              "selector": ".mobile-sub-menu-btn > .ion-android-menu",
-              "path": "1,HTML,2,BODY,7,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,DIV,0,DIV,1,DIV,0,DIV,0,BUTTON,1,ION-ICON",
-              "snippet": "<ion-icon class=\"icon ion-android-menu hydrated\" role=\"img\"><div class=\"icon-inner\"></div></ion-icon>",
-              "explanation": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\""
-            }
-          },
-          {
-            "node": {
-              "type": "node",
-              "selector": "p:nth-child(4) > a > img",
-              "path": "1,HTML,2,BODY,7,DIV,0,DIV,1,DIV,0,DIV,1,DIV,1,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,SECTION,1,DIV,3,P,2,A,1,IMG",
+              "selector": "p:nth-child(5) > a > img",
+              "path": "1,HTML,2,BODY,7,DIV,0,DIV,1,DIV,0,DIV,1,DIV,1,DIV,0,DIV,1,DIV,0,DIV,0,DIV,1,SECTION,1,DIV,4,P,2,A,1,IMG",
               "snippet": "<img src=\"https://www.marist.edu/images/gray_arrow.gif\">",
               "explanation": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\""
             }
@@ -280,8 +266,8 @@
           {
             "node": {
               "type": "node",
-              "selector": "p:nth-child(6) > a > img",
-              "path": "1,HTML,2,BODY,7,DIV,0,DIV,1,DIV,0,DIV,1,DIV,1,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,SECTION,1,DIV,5,P,7,A,1,IMG",
+              "selector": "p:nth-child(7) > a > img",
+              "path": "1,HTML,2,BODY,7,DIV,0,DIV,1,DIV,0,DIV,1,DIV,1,DIV,0,DIV,1,DIV,0,DIV,0,DIV,1,SECTION,1,DIV,6,P,7,A,1,IMG",
               "snippet": "<img src=\"https://www.marist.edu/images/gray_arrow.gif\">",
               "explanation": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\""
             }
@@ -307,11 +293,95 @@
     },
     "label": {
       "id": "label",
-      "title": "Form elements have associated labels",
+      "title": "Form elements do not have associated labels",
       "description": "Labels ensure that form controls are announced properly by assistive technologies, like screen readers. [Learn more](https://dequeuniversity.com/rules/axe/2.2/label?application=lighthouse).",
-      "score": null,
-      "scoreDisplayMode": "not-applicable",
-      "rawValue": true
+      "score": 0,
+      "scoreDisplayMode": "binary",
+      "rawValue": false,
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "key": "node",
+            "itemType": "node",
+            "text": "Failing Elements"
+          }
+        ],
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "selector": "#\\33 ",
+              "path": "1,HTML,2,BODY,7,DIV,0,DIV,1,DIV,0,DIV,1,DIV,1,DIV,0,DIV,1,DIV,0,DIV,0,DIV,1,SECTION,2,DIV,3,DIV,0,DIV,1,FORM,1,INPUT",
+              "snippet": "<input class=\"textinput required\" type=\"text\" id=\"3\" name=\"3\" placeholder=\"First Name\">",
+              "explanation": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible\n  Form element does not have an implicit (wrapped) <label>\n  Form element does not have an explicit <label>\n  Element has no title attribute or the title attribute is empty"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": "#\\35 ",
+              "path": "1,HTML,2,BODY,7,DIV,0,DIV,1,DIV,0,DIV,1,DIV,1,DIV,0,DIV,1,DIV,0,DIV,0,DIV,1,SECTION,2,DIV,3,DIV,0,DIV,1,FORM,2,INPUT",
+              "snippet": "<input class=\"textinput required\" type=\"text\" id=\"5\" name=\"5\" placeholder=\"Last Name\">",
+              "explanation": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible\n  Form element does not have an implicit (wrapped) <label>\n  Form element does not have an explicit <label>\n  Element has no title attribute or the title attribute is empty"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": "#\\31 2",
+              "path": "1,HTML,2,BODY,7,DIV,0,DIV,1,DIV,0,DIV,1,DIV,1,DIV,0,DIV,1,DIV,0,DIV,0,DIV,1,SECTION,2,DIV,3,DIV,0,DIV,1,FORM,3,INPUT",
+              "snippet": "<input class=\"email required\" type=\"email\" id=\"12\" name=\"12\" placeholder=\"Email\">",
+              "explanation": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible\n  Form element does not have an implicit (wrapped) <label>\n  Form element does not have an explicit <label>\n  Element has no title attribute or the title attribute is empty"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": "#\\33 568",
+              "path": "1,HTML,2,BODY,7,DIV,0,DIV,1,DIV,0,DIV,1,DIV,1,DIV,0,DIV,1,DIV,0,DIV,0,DIV,1,SECTION,2,DIV,3,DIV,0,DIV,1,FORM,4,SELECT",
+              "snippet": "<select class=\"required\" id=\"3568\" name=\"3568\">",
+              "explanation": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible\n  Form element does not have an implicit (wrapped) <label>\n  Form element does not have an explicit <label>\n  Element has no title attribute or the title attribute is empty"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": "#\\33 570",
+              "path": "1,HTML,2,BODY,7,DIV,0,DIV,1,DIV,0,DIV,1,DIV,1,DIV,0,DIV,1,DIV,0,DIV,0,DIV,1,SECTION,2,DIV,3,DIV,0,DIV,1,FORM,5,SELECT",
+              "snippet": "<select class=\"required\" id=\"3570\" name=\"3570\">",
+              "explanation": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible\n  Form element does not have an implicit (wrapped) <label>\n  Form element does not have an explicit <label>\n  Element has no title attribute or the title attribute is empty"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": "#\\31 7",
+              "path": "1,HTML,2,BODY,7,DIV,0,DIV,1,DIV,0,DIV,1,DIV,1,DIV,0,DIV,1,DIV,0,DIV,0,DIV,1,SECTION,2,DIV,3,DIV,0,DIV,1,FORM,6,SELECT",
+              "snippet": "<select class=\"required\" id=\"17\" name=\"17\"><option value=\"\">Entry Year</option><option value=\"2019\">2019</option><option value=\"2020\">2020</option><option value=\"2021\">2021</option><option value=\"2022\">2022</option></select>",
+              "explanation": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible\n  Form element does not have an implicit (wrapped) <label>\n  Form element does not have an explicit <label>\n  Element has no title attribute or the title attribute is empty"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": "#\\33 572",
+              "path": "1,HTML,2,BODY,7,DIV,0,DIV,1,DIV,0,DIV,1,DIV,1,DIV,0,DIV,1,DIV,0,DIV,0,DIV,1,SECTION,2,DIV,3,DIV,0,DIV,1,FORM,7,SELECT",
+              "snippet": "<select class=\"required\" id=\"3572\" name=\"3572\"><option value=\"\">Entry Term</option><option value=\"20888\">Fall</option><option value=\"20898\">Spring</option><option value=\"20946\">Summer</option></select>",
+              "explanation": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible\n  Form element does not have an implicit (wrapped) <label>\n  Form element does not have an explicit <label>\n  Element has no title attribute or the title attribute is empty"
+            }
+          }
+        ],
+        "impact": "critical",
+        "tags": [
+          "cat.forms",
+          "wcag2a",
+          "wcag332",
+          "wcag131",
+          "section508",
+          "section508.22.n"
+        ]
+      }
     },
     "layout-table": {
       "id": "layout-table",
@@ -393,14 +463,9 @@
       "id": "tabindex",
       "title": "No element has a `[tabindex]` value greater than 0",
       "description": "A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more](https://dequeuniversity.com/rules/axe/2.2/tabindex?application=lighthouse).",
-      "score": 1,
-      "scoreDisplayMode": "binary",
-      "rawValue": true,
-      "details": {
-        "type": "table",
-        "headings": [],
-        "items": []
-      }
+      "score": null,
+      "scoreDisplayMode": "not-applicable",
+      "rawValue": true
     },
     "td-headers-attr": {
       "id": "td-headers-attr",
@@ -646,7 +711,7 @@
         },
         {
           "id": "frame-title",
-          "weight": 5,
+          "weight": 0,
           "group": "a11y-describe-contents"
         },
         {
@@ -671,7 +736,7 @@
         },
         {
           "id": "label",
-          "weight": 0,
+          "weight": 10,
           "group": "a11y-describe-contents"
         },
         {
@@ -711,7 +776,7 @@
         },
         {
           "id": "tabindex",
-          "weight": 4,
+          "weight": 0,
           "group": "a11y-correct-attributes"
         },
         {
@@ -785,7 +850,7 @@
         }
       ],
       "id": "accessibility",
-      "score": 0.92
+      "score": 0.82
     }
   },
   "categoryGroups": {
@@ -846,7 +911,7 @@
     }
   },
   "timing": {
-    "total": 5200
+    "total": 5105
   },
   "i18n": {
     "rendererFormattedStrings": {

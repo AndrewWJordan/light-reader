@@ -3,10 +3,10 @@
   "environment": {
     "networkUserAgent": "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5 Build/MRA58N) AppleWebKit/537.36(KHTML, like Gecko) Chrome/71.0.3559.0 Mobile Safari/537.36",
     "hostUserAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/70.0.3538.77 Safari/537.36",
-    "benchmarkIndex": 1186
+    "benchmarkIndex": 1200
   },
   "lighthouseVersion": "4.0.0-alpha.2-3.2.1",
-  "fetchTime": "2019-01-30T03:27:23.260Z",
+  "fetchTime": "2019-04-03T21:44:52.790Z",
   "requestedUrl": "https://www.marist.edu/science/medical-lab/structured-programs",
   "finalUrl": "https://www.marist.edu/science/medical-lab/structured-programs",
   "runWarnings": [],
@@ -207,14 +207,9 @@
       "id": "frame-title",
       "title": "`<frame>` or `<iframe>` elements have a title",
       "description": "Screen reader users rely on frame titles to describe the contents of frames. [Learn more](https://dequeuniversity.com/rules/axe/2.2/frame-title?application=lighthouse).",
-      "score": 1,
-      "scoreDisplayMode": "binary",
-      "rawValue": true,
-      "details": {
-        "type": "table",
-        "headings": [],
-        "items": []
-      }
+      "score": null,
+      "scoreDisplayMode": "not-applicable",
+      "rawValue": true
     },
     "html-has-lang": {
       "id": "html-has-lang",
@@ -244,39 +239,15 @@
     },
     "image-alt": {
       "id": "image-alt",
-      "title": "Image elements do not have `[alt]` attributes",
+      "title": "Image elements have `[alt]` attributes",
       "description": "Informative elements should aim for short, descriptive alternate text. Decorative elements can be ignored with an empty alt attribute. [Learn more](https://dequeuniversity.com/rules/axe/2.2/image-alt?application=lighthouse).",
-      "score": 0,
+      "score": 1,
       "scoreDisplayMode": "binary",
-      "rawValue": false,
+      "rawValue": true,
       "details": {
         "type": "table",
-        "headings": [
-          {
-            "key": "node",
-            "itemType": "node",
-            "text": "Failing Elements"
-          }
-        ],
-        "items": [
-          {
-            "node": {
-              "type": "node",
-              "selector": ".mobile-sub-menu-btn > .ion-android-menu",
-              "path": "1,HTML,3,BODY,7,DIV,0,DIV,1,DIV,0,DIV,0,DIV,0,DIV,0,DIV,1,DIV,0,DIV,0,BUTTON,1,ION-ICON",
-              "snippet": "<ion-icon class=\"icon ion-android-menu hydrated\" role=\"img\"><div class=\"icon-inner\"></div></ion-icon>",
-              "explanation": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\""
-            }
-          }
-        ],
-        "impact": "critical",
-        "tags": [
-          "cat.text-alternatives",
-          "wcag2a",
-          "wcag111",
-          "section508",
-          "section508.22.a"
-        ]
+        "headings": [],
+        "items": []
       }
     },
     "input-image-alt": {
@@ -375,14 +346,9 @@
       "id": "tabindex",
       "title": "No element has a `[tabindex]` value greater than 0",
       "description": "A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more](https://dequeuniversity.com/rules/axe/2.2/tabindex?application=lighthouse).",
-      "score": 1,
-      "scoreDisplayMode": "binary",
-      "rawValue": true,
-      "details": {
-        "type": "table",
-        "headings": [],
-        "items": []
-      }
+      "score": null,
+      "scoreDisplayMode": "not-applicable",
+      "rawValue": true
     },
     "td-headers-attr": {
       "id": "td-headers-attr",
@@ -628,7 +594,7 @@
         },
         {
           "id": "frame-title",
-          "weight": 5,
+          "weight": 0,
           "group": "a11y-describe-contents"
         },
         {
@@ -693,7 +659,7 @@
         },
         {
           "id": "tabindex",
-          "weight": 4,
+          "weight": 0,
           "group": "a11y-correct-attributes"
         },
         {
@@ -767,7 +733,7 @@
         }
       ],
       "id": "accessibility",
-      "score": 0.92
+      "score": 1
     }
   },
   "categoryGroups": {
@@ -828,7 +794,7 @@
     }
   },
   "timing": {
-    "total": 7204
+    "total": 5315
   },
   "i18n": {
     "rendererFormattedStrings": {
