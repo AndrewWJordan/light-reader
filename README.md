@@ -41,4 +41,4 @@ node server.js
 
 Place your Lighthouse JSON audit files in the ```reports/``` directory.  Start up the application and hit ```/results``` page.  LightReader will loop through each report's JSON and return a list of all the pages that scored below 100%.  It will extract the overall site's score, the individual page scores and details as to which elements may have caused the violation.  Make your chages on your site and rerun the report from that page.
 
-A CSV file is generated in the root directory.  Right now it includes the URL of the page and its score. More columns can be added within the ```congrollers/reports.js``` file. 
+A CSV file is generated in the root directory of the project. This functionality currently resides within the ```controllers/reports.js``` file. 
