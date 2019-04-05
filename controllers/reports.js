@@ -20,6 +20,10 @@ router.get('/results', (req, res) => {
   }
   async.waterfall([
     function(callback) {
+      // create the reports directory if it doesn't exist
+      if (!fs.existsSync(path)){
+          fs.mkdirSync(path);
+      }
       fs.readdir(path, (err, files) => {
         if (err) return console.log(err)
           files.forEach((file, index) => {

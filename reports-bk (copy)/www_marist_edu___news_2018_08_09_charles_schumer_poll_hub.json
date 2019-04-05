@@ -1,0 +1,1378 @@
+{
+  "userAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/70.0.3538.77 Safari/537.36",
+  "environment": {
+    "networkUserAgent": "Mozilla/5.0 (Linux; Android 6.0.1; Nexus 5 Build/MRA58N) AppleWebKit/537.36(KHTML, like Gecko) Chrome/71.0.3559.0 Mobile Safari/537.36",
+    "hostUserAgent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/70.0.3538.77 Safari/537.36",
+    "benchmarkIndex": 1196
+  },
+  "lighthouseVersion": "4.0.0-alpha.2-3.2.1",
+  "fetchTime": "2019-04-03T20:08:16.085Z",
+  "requestedUrl": "https://www.marist.edu/-/news-2018-08-09-charles-schumer-poll-hub",
+  "finalUrl": "https://www.marist.edu/-/news-2018-08-09-charles-schumer-poll-hub",
+  "runWarnings": [],
+  "runtimeError": {
+    "code": "NO_ERROR",
+    "message": ""
+  },
+  "audits": {
+    "accesskeys": {
+      "id": "accesskeys",
+      "title": "`[accesskey]` values are unique",
+      "description": "Access keys let users quickly focus a part of the page. For proper navigation, each access key must be unique. [Learn more](https://dequeuniversity.com/rules/axe/2.2/accesskeys?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "not-applicable",
+      "rawValue": true
+    },
+    "aria-allowed-attr": {
+      "id": "aria-allowed-attr",
+      "title": "`[aria-*]` attributes match their roles",
+      "description": "Each ARIA `role` supports a specific subset of `aria-*` attributes. Mismatching these invalidates the `aria-*` attributes. [Learn more](https://dequeuniversity.com/rules/axe/2.2/aria-allowed-attr?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "not-applicable",
+      "rawValue": true
+    },
+    "aria-required-attr": {
+      "id": "aria-required-attr",
+      "title": "`[role]`s have all required `[aria-*]` attributes",
+      "description": "Some ARIA roles have required attributes that describe the state of the element to screen readers. [Learn more](https://dequeuniversity.com/rules/axe/2.2/aria-required-attr?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "not-applicable",
+      "rawValue": true
+    },
+    "aria-required-children": {
+      "id": "aria-required-children",
+      "title": "Elements with `[role]` that require specific children `[role]`s, are present",
+      "description": "Some ARIA parent roles must contain specific child roles to perform their intended accessibility functions. [Learn more](https://dequeuniversity.com/rules/axe/2.2/aria-required-children?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "not-applicable",
+      "rawValue": true
+    },
+    "aria-required-parent": {
+      "id": "aria-required-parent",
+      "title": "`[role]`s are contained by their required parent element",
+      "description": "Some ARIA child roles must be contained by specific parent roles to properly perform their intended accessibility functions. [Learn more](https://dequeuniversity.com/rules/axe/2.2/aria-required-parent?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "not-applicable",
+      "rawValue": true
+    },
+    "aria-roles": {
+      "id": "aria-roles",
+      "title": "`[role]` values are valid",
+      "description": "ARIA roles must have valid values in order to perform their intended accessibility functions. [Learn more](https://dequeuniversity.com/rules/axe/2.2/aria-roles?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "not-applicable",
+      "rawValue": true
+    },
+    "aria-valid-attr-value": {
+      "id": "aria-valid-attr-value",
+      "title": "`[aria-*]` attributes have valid values",
+      "description": "Assistive technologies, like screen readers, can't interpret ARIA attributes with invalid values. [Learn more](https://dequeuniversity.com/rules/axe/2.2/aria-valid-attr-value?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "not-applicable",
+      "rawValue": true
+    },
+    "aria-valid-attr": {
+      "id": "aria-valid-attr",
+      "title": "`[aria-*]` attributes are valid and not misspelled",
+      "description": "Assistive technologies, like screen readers, can't interpret ARIA attributes with invalid names. [Learn more](https://dequeuniversity.com/rules/axe/2.2/aria-valid-attr?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "not-applicable",
+      "rawValue": true
+    },
+    "audio-caption": {
+      "id": "audio-caption",
+      "title": "`<audio>` elements contain a `<track>` element with `[kind=\"captions\"]`",
+      "description": "Captions make audio elements usable for deaf or hearing-impaired users, providing critical information such as who is talking, what they're saying, and other non-speech information. [Learn more](https://dequeuniversity.com/rules/axe/2.2/audio-caption?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "not-applicable",
+      "rawValue": true
+    },
+    "button-name": {
+      "id": "button-name",
+      "title": "Buttons have an accessible name",
+      "description": "When a button doesn't have an accessible name, screen readers announce it as \"button\", making it unusable for users who rely on screen readers. [Learn more](https://dequeuniversity.com/rules/axe/2.2/button-name?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "not-applicable",
+      "rawValue": true
+    },
+    "bypass": {
+      "id": "bypass",
+      "title": "The page contains a heading, skip link, or landmark region",
+      "description": "Adding ways to bypass repetitive content lets keyboard users navigate the page more efficiently. [Learn more](https://dequeuniversity.com/rules/axe/2.2/bypass?application=lighthouse).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "rawValue": true,
+      "details": {
+        "type": "table",
+        "headings": [],
+        "items": []
+      }
+    },
+    "color-contrast": {
+      "id": "color-contrast",
+      "title": "Background and foreground colors do not have a sufficient contrast ratio.",
+      "description": "Low-contrast text is difficult or impossible for many users to read. [Learn more](https://dequeuniversity.com/rules/axe/2.2/color-contrast?application=lighthouse).",
+      "score": 0,
+      "scoreDisplayMode": "binary",
+      "rawValue": false,
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "key": "node",
+            "itemType": "node",
+            "text": "Failing Elements"
+          }
+        ],
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "selector": ".mvp-post-excerpt > p",
+              "path": "1,HTML,1,BODY,2,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,ARTICLE,3,DIV,0,DIV,2,DIV,0,DIV,0,HEADER,2,SPAN,0,P",
+              "snippet": "<p>A candid discussion with the Senate minority leader about the 2018 midterm elections, the Brett Kavanaugh nomination to the U.S. Supreme Court, &amp; President Donald Trump</p>",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 3.54 (foreground color: #888888, background color: #ffffff, font size: 13.2pt, font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": ".author-name > a[title=\"Posts\\ by\\ Marist\\ Poll\"][rel=\"author\"]",
+              "path": "1,HTML,1,BODY,2,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,ARTICLE,3,DIV,0,DIV,2,DIV,0,DIV,0,HEADER,3,DIV,0,DIV,0,DIV,2,DIV,0,DIV,1,P,0,SPAN,0,A",
+              "snippet": "<a href=\"http://maristpoll.marist.edu/author/maristpoll/\" title=\"Posts by Marist Poll\" rel=\"author\">Marist Poll</a>",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.3 (foreground color: #0077ee, background color: #ffffff, font size: 10.8pt, font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": ".post-info-text",
+              "path": "1,HTML,1,BODY,2,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,ARTICLE,3,DIV,0,DIV,2,DIV,0,DIV,0,HEADER,3,DIV,0,DIV,0,DIV,2,DIV,2,DIV,0,SPAN",
+              "snippet": "<span class=\"post-info-text\">Published on</span>",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 2.32 (foreground color: #aaaaaa, background color: #ffffff, font size: 9.6pt, font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": "time[itemprop=\"datePublished\"]",
+              "path": "1,HTML,1,BODY,2,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,ARTICLE,3,DIV,0,DIV,2,DIV,0,DIV,0,HEADER,3,DIV,0,DIV,0,DIV,2,DIV,2,DIV,1,SPAN,0,TIME",
+              "snippet": "<time class=\"post-date updated\" itemprop=\"datePublished\" datetime=\"2018-08-09\">August 9, 2018</time>",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 2.32 (foreground color: #aaaaaa, background color: #ffffff, font size: 9.6pt, font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": "a[rel=\"tag\"]:nth-child(1)",
+              "path": "1,HTML,1,BODY,2,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,ARTICLE,3,DIV,0,DIV,2,DIV,0,DIV,5,DIV,1,SPAN,0,A",
+              "snippet": "<a href=\"http://maristpoll.marist.edu/tag/abortion/\" rel=\"tag\">Abortion</a>",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.3 (foreground color: #0077ee, background color: #ffffff, font size: 8.4pt, font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": "a[rel=\"tag\"]:nth-child(2)",
+              "path": "1,HTML,1,BODY,2,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,ARTICLE,3,DIV,0,DIV,2,DIV,0,DIV,5,DIV,1,SPAN,2,A",
+              "snippet": "<a href=\"http://maristpoll.marist.edu/tag/barbara-carvalho/\" rel=\"tag\">Barbara Carvalho</a>",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.3 (foreground color: #0077ee, background color: #ffffff, font size: 8.4pt, font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": "a[rel=\"tag\"]:nth-child(3)",
+              "path": "1,HTML,1,BODY,2,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,ARTICLE,3,DIV,0,DIV,2,DIV,0,DIV,5,DIV,1,SPAN,4,A",
+              "snippet": "<a href=\"http://maristpoll.marist.edu/tag/charles-schumer/\" rel=\"tag\">Charles Schumer</a>",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.3 (foreground color: #0077ee, background color: #ffffff, font size: 8.4pt, font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": "a[rel=\"tag\"]:nth-child(4)",
+              "path": "1,HTML,1,BODY,2,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,ARTICLE,3,DIV,0,DIV,2,DIV,0,DIV,5,DIV,1,SPAN,6,A",
+              "snippet": "<a href=\"http://maristpoll.marist.edu/tag/jay-dedapper/\" rel=\"tag\">Jay DeDapper</a>",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.3 (foreground color: #0077ee, background color: #ffffff, font size: 8.4pt, font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": "a[rel=\"tag\"]:nth-child(5)",
+              "path": "1,HTML,1,BODY,2,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,ARTICLE,3,DIV,0,DIV,2,DIV,0,DIV,5,DIV,1,SPAN,8,A",
+              "snippet": "<a href=\"http://maristpoll.marist.edu/tag/judge-brett-kavanaugh/\" rel=\"tag\">Judge Brett Kavanaugh</a>",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.3 (foreground color: #0077ee, background color: #ffffff, font size: 8.4pt, font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": "a[rel=\"tag\"]:nth-child(6)",
+              "path": "1,HTML,1,BODY,2,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,ARTICLE,3,DIV,0,DIV,2,DIV,0,DIV,5,DIV,1,SPAN,10,A",
+              "snippet": "<a href=\"http://maristpoll.marist.edu/tag/lee-miringoff/\" rel=\"tag\">Lee Miringoff</a>",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.3 (foreground color: #0077ee, background color: #ffffff, font size: 8.4pt, font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": "a[rel=\"tag\"]:nth-child(7)",
+              "path": "1,HTML,1,BODY,2,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,ARTICLE,3,DIV,0,DIV,2,DIV,0,DIV,5,DIV,1,SPAN,12,A",
+              "snippet": "<a href=\"http://maristpoll.marist.edu/tag/poll-hub/\" rel=\"tag\">Poll Hub</a>",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.3 (foreground color: #0077ee, background color: #ffffff, font size: 8.4pt, font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": "a[rel=\"tag\"]:nth-child(8)",
+              "path": "1,HTML,1,BODY,2,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,ARTICLE,3,DIV,0,DIV,2,DIV,0,DIV,5,DIV,1,SPAN,14,A",
+              "snippet": "<a href=\"http://maristpoll.marist.edu/tag/president-donald-trump/\" rel=\"tag\">President Donald Trump</a>",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.3 (foreground color: #0077ee, background color: #ffffff, font size: 8.4pt, font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": "a[rel=\"tag\"]:nth-child(9)",
+              "path": "1,HTML,1,BODY,2,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,ARTICLE,3,DIV,0,DIV,2,DIV,0,DIV,5,DIV,1,SPAN,16,A",
+              "snippet": "<a href=\"http://maristpoll.marist.edu/tag/russian-interference/\" rel=\"tag\">Russian interference</a>",
+              "explanation": "Fix any of the following:\n  Element has insufficient color contrast of 4.3 (foreground color: #0077ee, background color: #ffffff, font size: 8.4pt, font weight: normal). Expected contrast ratio of 4.5:1"
+            }
+          }
+        ],
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143"
+        ]
+      }
+    },
+    "definition-list": {
+      "id": "definition-list",
+      "title": "`<dl>`'s contain only properly-ordered `<dt>` and `<dd>` groups, `<script>` or `<template>` elements.",
+      "description": "When definition lists are not properly marked up, screen readers may produce confusing or inaccurate output. [Learn more](https://dequeuniversity.com/rules/axe/2.2/definition-list?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "not-applicable",
+      "rawValue": true
+    },
+    "dlitem": {
+      "id": "dlitem",
+      "title": "Definition list items are wrapped in `<dl>` elements",
+      "description": "Definition list items (`<dt>` and `<dd>`) must be wrapped in a parent `<dl>` element to ensure that screen readers can properly announce them. [Learn more](https://dequeuniversity.com/rules/axe/2.2/dlitem?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "not-applicable",
+      "rawValue": true
+    },
+    "document-title": {
+      "id": "document-title",
+      "title": "Document has a `<title>` element",
+      "description": "The title gives screen reader users an overview of the page, and search engine users rely on it heavily to determine if a page is relevant to their search. [Learn more](https://developers.google.com/web/tools/lighthouse/audits/title).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "rawValue": true,
+      "details": {
+        "type": "table",
+        "headings": [],
+        "items": []
+      }
+    },
+    "duplicate-id": {
+      "id": "duplicate-id",
+      "title": "`[id]` attributes on the page are not unique",
+      "description": "The value of an id attribute must be unique to prevent other instances from being overlooked by assistive technologies. [Learn more](https://dequeuniversity.com/rules/axe/2.2/duplicate-id?application=lighthouse).",
+      "score": 0,
+      "scoreDisplayMode": "binary",
+      "rawValue": false,
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "key": "node",
+            "itemType": "node",
+            "text": "Failing Elements"
+          }
+        ],
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "selector": "#mvp-post-info-col > .left.relative",
+              "path": "1,HTML,1,BODY,2,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,ARTICLE,3,DIV,0,DIV,0,DIV,0,DIV",
+              "snippet": "<div id=\"mvp-related-posts\" class=\"left relative\">",
+              "explanation": "Fix any of the following:\n  Document has multiple elements with the same id attribute: mvp-related-posts"
+            }
+          }
+        ],
+        "impact": "moderate",
+        "tags": [
+          "cat.parsing",
+          "wcag2a",
+          "wcag411"
+        ]
+      }
+    },
+    "frame-title": {
+      "id": "frame-title",
+      "title": "`<frame>` or `<iframe>` elements do not have a title",
+      "description": "Screen reader users rely on frame titles to describe the contents of frames. [Learn more](https://dequeuniversity.com/rules/axe/2.2/frame-title?application=lighthouse).",
+      "score": 0,
+      "scoreDisplayMode": "binary",
+      "rawValue": false,
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "key": "node",
+            "itemType": "node",
+            "text": "Failing Elements"
+          }
+        ],
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "selector": "iframe[width=\"\\31 00\\%\"]",
+              "path": "1,HTML,1,BODY,2,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,ARTICLE,3,DIV,0,DIV,2,DIV,0,DIV,1,SECTION,0,P,0,IFRAME",
+              "snippet": "<iframe src=\"https://player.blubrry.com/id/36143216/#time-0&amp;darkOrLight-Light&amp;shownotes-0181c8&amp;shownotesBackground-d1d1d1&amp;download-ffffff&amp;downloadBackground-0181c8&amp;subscribe-ffffff&amp;subscribeBackground-d91b35&amp;share-ffffff&amp;shareBackground-1994d4\" scrolling=\"no\" width=\"100%\" height=\"138px\" frameborder=\"0\">",
+              "explanation": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\""
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": "#st_gdpr_iframe",
+              "path": "1,HTML,1,BODY,30,IFRAME",
+              "snippet": "<iframe src=\"https://c.sharethis.mgr.consensu.org/v1.0/cmp/portal.html\" id=\"st_gdpr_iframe\" style=\"width: 0px; height: 0px; position: absolute; left: -5000px;\"></iframe>",
+              "explanation": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible\n  Element has no title attribute or the title attribute is empty\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\""
+            }
+          }
+        ],
+        "impact": "serious",
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag241",
+          "section508",
+          "section508.22.i"
+        ]
+      }
+    },
+    "html-has-lang": {
+      "id": "html-has-lang",
+      "title": "`<html>` element has a `[lang]` attribute",
+      "description": "If a page doesn't specify a lang attribute, a screen reader assumes that the page is in the default language that the user chose when setting up the screen reader. If the page isn't actually in the default language, then the screen reader might not announce the page's text correctly. [Learn more](https://dequeuniversity.com/rules/axe/2.2/html-lang?application=lighthouse).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "rawValue": true,
+      "details": {
+        "type": "table",
+        "headings": [],
+        "items": []
+      }
+    },
+    "html-lang-valid": {
+      "id": "html-lang-valid",
+      "title": "`<html>` element has a valid value for its `[lang]` attribute",
+      "description": "Specifying a valid [BCP 47 language](https://www.w3.org/International/questions/qa-choosing-language-tags#question) helps screen readers announce text properly. [Learn more](https://dequeuniversity.com/rules/axe/2.2/valid-lang?application=lighthouse).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "rawValue": true,
+      "details": {
+        "type": "table",
+        "headings": [],
+        "items": []
+      }
+    },
+    "image-alt": {
+      "id": "image-alt",
+      "title": "Image elements have `[alt]` attributes",
+      "description": "Informative elements should aim for short, descriptive alternate text. Decorative elements can be ignored with an empty alt attribute. [Learn more](https://dequeuniversity.com/rules/axe/2.2/image-alt?application=lighthouse).",
+      "score": 1,
+      "scoreDisplayMode": "binary",
+      "rawValue": true,
+      "details": {
+        "type": "table",
+        "headings": [],
+        "items": []
+      }
+    },
+    "input-image-alt": {
+      "id": "input-image-alt",
+      "title": "`<input type=\"image\">` elements have `[alt]` text",
+      "description": "When an image is being used as an `<input>` button, providing alternative text can help screen reader users understand the purpose of the button. [Learn more](https://dequeuniversity.com/rules/axe/2.2/input-image-alt?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "not-applicable",
+      "rawValue": true
+    },
+    "label": {
+      "id": "label",
+      "title": "Form elements do not have associated labels",
+      "description": "Labels ensure that form controls are announced properly by assistive technologies, like screen readers. [Learn more](https://dequeuniversity.com/rules/axe/2.2/label?application=lighthouse).",
+      "score": 0,
+      "scoreDisplayMode": "binary",
+      "rawValue": false,
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "key": "node",
+            "itemType": "node",
+            "text": "Failing Elements"
+          }
+        ],
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "selector": "#s",
+              "path": "1,HTML,1,BODY,2,DIV,0,HEADER,0,DIV,0,DIV,0,DIV,0,FORM,0,INPUT",
+              "snippet": "<input type=\"text\" name=\"s\" id=\"s\" value=\"Search\" onfocus=\"if (this.value == &quot;Search&quot;) { this.value = &quot;&quot;; }\" onblur=\"if (this.value == &quot;&quot;) { this.value = &quot;Search&quot;; }\">",
+              "explanation": "Fix any of the following:\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible\n  Form element does not have an implicit (wrapped) <label>\n  Form element does not have an explicit <label>\n  Element has no title attribute or the title attribute is empty"
+            }
+          }
+        ],
+        "impact": "critical",
+        "tags": [
+          "cat.forms",
+          "wcag2a",
+          "wcag332",
+          "wcag131",
+          "section508",
+          "section508.22.n"
+        ]
+      }
+    },
+    "layout-table": {
+      "id": "layout-table",
+      "title": "Presentational `<table>` elements avoid using `<th>`, `<caption>` or the `[summary]` attribute.",
+      "description": "A table being used for layout purposes should not include data elements, such as the th or caption elements or the summary attribute, because this can create a confusing experience for screen reader users. [Learn more](https://dequeuniversity.com/rules/axe/2.2/layout-table?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "not-applicable",
+      "rawValue": true
+    },
+    "link-name": {
+      "id": "link-name",
+      "title": "Links do not have a discernible name",
+      "description": "Link text (and alternate text for images, when used as links) that is discernible, unique, and focusable improves the navigation experience for screen reader users. [Learn more](https://dequeuniversity.com/rules/axe/2.2/link-name?application=lighthouse).",
+      "score": 0,
+      "scoreDisplayMode": "binary",
+      "rawValue": false,
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "key": "node",
+            "itemType": "node",
+            "text": "Failing Elements"
+          }
+        ],
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "selector": ".mvp-fly-soc-list > li:nth-child(1) > .fa-facebook-official.fa-2[target=\"_blank\"]",
+              "path": "1,HTML,1,BODY,0,DIV,4,DIV,1,UL,0,LI,0,A",
+              "snippet": "<a href=\"https://www.facebook.com/maristpoll\" target=\"_blank\" class=\"fa fa-facebook-official fa-2\"></a>",
+              "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\""
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": ".mvp-fly-soc-list > li:nth-child(2) > .fa-twitter[href$=\"maristpoll\"][target=\"_blank\"]",
+              "path": "1,HTML,1,BODY,0,DIV,4,DIV,1,UL,1,LI,0,A",
+              "snippet": "<a href=\"https://twitter.com/maristpoll\" target=\"_blank\" class=\"fa fa-twitter fa-2\"></a>",
+              "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\""
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": ".mvp-fly-soc-list > li:nth-child(3) > .fa-instagram.fa-2[target=\"_blank\"]",
+              "path": "1,HTML,1,BODY,0,DIV,4,DIV,1,UL,2,LI,0,A",
+              "snippet": "<a href=\"https://instagram.com/maristpoll\" target=\"_blank\" class=\"fa fa-instagram fa-2\"></a>",
+              "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\""
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": ".mvp-fly-soc-list > li:nth-child(4) > .fa-youtube-play.fa-2[target=\"_blank\"]",
+              "path": "1,HTML,1,BODY,0,DIV,4,DIV,1,UL,3,LI,0,A",
+              "snippet": "<a href=\"https://www.youtube.com/user/MaristPoll\" target=\"_blank\" class=\"fa fa-youtube-play fa-2\"></a>",
+              "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\""
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": "#mvp-nav-soc-list > .mvp-post-soc-list > a:nth-child(3)",
+              "path": "1,HTML,1,BODY,2,DIV,0,HEADER,4,DIV,0,DIV,0,DIV,0,DIV,2,DIV,0,UL,2,A",
+              "snippet": "<a href=\"whatsapp://send?text=Poll Hub: An Interview with Senator Charles Schumer http://maristpoll.marist.edu/poll-hub-an-interview-with-senator-charles-schumer/\">",
+              "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\""
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": "#mvp-nav-soc-list > .mvp-post-soc-list > a:nth-child(5)",
+              "path": "1,HTML,1,BODY,2,DIV,0,HEADER,4,DIV,0,DIV,0,DIV,0,DIV,2,DIV,0,UL,4,A",
+              "snippet": "<a href=\"mailto:?subject=Poll Hub: An Interview with Senator Charles Schumer&amp;BODY=I found this article interesting and thought of sharing it with you. Check it out: http://maristpoll.marist.edu/poll-hub-an-interview-with-senator-charles-schumer/\">",
+              "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\""
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": ".mvp-author-email > a",
+              "path": "1,HTML,1,BODY,2,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,ARTICLE,3,DIV,0,DIV,2,DIV,0,DIV,0,HEADER,3,DIV,0,DIV,0,DIV,2,DIV,0,DIV,1,P,1,SPAN,0,A",
+              "snippet": "<a href=\"mailto:TheMaristPoll@marist.edu\"><i class=\"fa fa-envelope-o fa-2\"></i></a>",
+              "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\""
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": "#mvp-post-info-bot > .mvp-post-soc-list > a:nth-child(3)",
+              "path": "1,HTML,1,BODY,2,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,ARTICLE,3,DIV,0,DIV,2,DIV,0,DIV,0,HEADER,3,DIV,2,DIV,0,UL,2,A",
+              "snippet": "<a href=\"whatsapp://send?text=Poll Hub: An Interview with Senator Charles Schumer http://maristpoll.marist.edu/poll-hub-an-interview-with-senator-charles-schumer/\">",
+              "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\""
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": "#mvp-post-info-bot > .mvp-post-soc-list > a:nth-child(5)",
+              "path": "1,HTML,1,BODY,2,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,ARTICLE,3,DIV,0,DIV,2,DIV,0,DIV,0,HEADER,3,DIV,2,DIV,0,UL,4,A",
+              "snippet": "<a href=\"mailto:?subject=Poll Hub: An Interview with Senator Charles Schumer&amp;BODY=I found this article interesting and thought of sharing it with you. Check it out: http://maristpoll.marist.edu/poll-hub-an-interview-with-senator-charles-schumer/\">",
+              "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\""
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": ".mvp-post-soc-list > a:nth-child(6)",
+              "path": "1,HTML,1,BODY,2,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,ARTICLE,3,DIV,0,DIV,2,DIV,0,DIV,0,HEADER,3,DIV,2,DIV,0,UL,5,A",
+              "snippet": "<a href=\"http://maristpoll.marist.edu/poll-hub-an-interview-with-senator-charles-schumer/#respond\">",
+              "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\""
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": "#mvp-author-box-soc-wrap > a",
+              "path": "1,HTML,1,BODY,2,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,ARTICLE,3,DIV,0,DIV,2,DIV,0,DIV,9,DIV,0,DIV,2,DIV,0,DIV,2,DIV,0,A",
+              "snippet": "<a href=\"mailto:TheMaristPoll@marist.edu\"><span class=\"mvp-author-box-soc fa fa-envelope-square fa-2\"></span></a>",
+              "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\""
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": "li:nth-child(1) > .mvp-main-blog-out.relative > a[rel=\"bookmark\"]",
+              "path": "1,HTML,1,BODY,2,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,2,DIV,1,SECTION,0,UL,0,LI,0,DIV,0,A",
+              "snippet": "<a href=\"http://maristpoll.marist.edu/poll-hub-a-campaign-insiders-look-at-the-2020-presidential-election/\" rel=\"bookmark\">",
+              "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\""
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": "li:nth-child(2) > .mvp-main-blog-out.relative > a[rel=\"bookmark\"]",
+              "path": "1,HTML,1,BODY,2,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,2,DIV,1,SECTION,0,UL,1,LI,0,DIV,0,A",
+              "snippet": "<a href=\"http://maristpoll.marist.edu/poll-hub-a-podcast-about-podcasts/\" rel=\"bookmark\">",
+              "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\""
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": "li:nth-child(3) > .mvp-main-blog-out.relative > a[rel=\"bookmark\"]",
+              "path": "1,HTML,1,BODY,2,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,2,DIV,1,SECTION,0,UL,2,LI,0,DIV,0,A",
+              "snippet": "<a href=\"http://maristpoll.marist.edu/poll-hub-the-not-so-daily-briefing/\" rel=\"bookmark\">",
+              "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\""
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": "li:nth-child(4) > .mvp-main-blog-out.relative > a[rel=\"bookmark\"]",
+              "path": "1,HTML,1,BODY,2,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,2,DIV,1,SECTION,0,UL,3,LI,0,DIV,0,A",
+              "snippet": "<a href=\"http://maristpoll.marist.edu/poll-hub-the-empire-state-weighs-in-on-2020/\" rel=\"bookmark\">",
+              "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\""
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": "li:nth-child(5) > .mvp-main-blog-out.relative > a[rel=\"bookmark\"]",
+              "path": "1,HTML,1,BODY,2,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,2,DIV,1,SECTION,0,UL,4,LI,0,DIV,0,A",
+              "snippet": "<a href=\"http://maristpoll.marist.edu/poll-hub-incumbent-problems/\" rel=\"bookmark\">",
+              "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\""
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": ".mvp-foot-soc-list > li:nth-child(1) > .fa-facebook-official.fa-2[target=\"_blank\"]",
+              "path": "1,HTML,1,BODY,2,DIV,4,FOOTER,0,DIV,0,DIV,0,DIV,0,DIV,0,UL,0,LI,0,A",
+              "snippet": "<a href=\"https://www.facebook.com/maristpoll\" target=\"_blank\" class=\"fa fa-facebook-official fa-2\"></a>",
+              "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\""
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": ".mvp-foot-soc-list > li:nth-child(2) > .fa-twitter[href$=\"maristpoll\"][target=\"_blank\"]",
+              "path": "1,HTML,1,BODY,2,DIV,4,FOOTER,0,DIV,0,DIV,0,DIV,0,DIV,0,UL,1,LI,0,A",
+              "snippet": "<a href=\"https://twitter.com/maristpoll\" target=\"_blank\" class=\"fa fa-twitter fa-2\"></a>",
+              "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\""
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": ".mvp-foot-soc-list > li:nth-child(3) > .fa-instagram.fa-2[target=\"_blank\"]",
+              "path": "1,HTML,1,BODY,2,DIV,4,FOOTER,0,DIV,0,DIV,0,DIV,0,DIV,0,UL,2,LI,0,A",
+              "snippet": "<a href=\"https://instagram.com/maristpoll\" target=\"_blank\" class=\"fa fa-instagram fa-2\"></a>",
+              "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\""
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": ".mvp-foot-soc-list > li:nth-child(4) > .fa-youtube-play.fa-2[target=\"_blank\"]",
+              "path": "1,HTML,1,BODY,2,DIV,4,FOOTER,0,DIV,0,DIV,0,DIV,0,DIV,0,UL,3,LI,0,A",
+              "snippet": "<a href=\"https://www.youtube.com/user/MaristPoll\" target=\"_blank\" class=\"fa fa-youtube-play fa-2\"></a>",
+              "explanation": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty or not visible\n  Element's default semantics were not overridden with role=\"presentation\"\n  Element's default semantics were not overridden with role=\"none\""
+            }
+          }
+        ],
+        "impact": "serious",
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag111",
+          "wcag412",
+          "wcag244",
+          "section508",
+          "section508.22.a"
+        ]
+      }
+    },
+    "list": {
+      "id": "list",
+      "title": "Lists do not contain only `<li>` elements and script supporting elements (`<script>` and `<template>`).",
+      "description": "Screen readers have a specific way of announcing lists. Ensuring proper list structure aids screen reader output. [Learn more](https://dequeuniversity.com/rules/axe/2.2/list?application=lighthouse).",
+      "score": 0,
+      "scoreDisplayMode": "binary",
+      "rawValue": false,
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "key": "node",
+            "itemType": "node",
+            "text": "Failing Elements"
+          }
+        ],
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "selector": "#mvp-nav-soc-list > .mvp-post-soc-list",
+              "path": "1,HTML,1,BODY,2,DIV,0,HEADER,4,DIV,0,DIV,0,DIV,0,DIV,2,DIV,0,UL",
+              "snippet": "<ul class=\"mvp-post-soc-list left relative\">",
+              "explanation": "Fix all of the following:\n  List element has direct children that are not allowed inside <li> elements"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": "#mvp-post-info-bot > .mvp-post-soc-list",
+              "path": "1,HTML,1,BODY,2,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,ARTICLE,3,DIV,0,DIV,2,DIV,0,DIV,0,HEADER,3,DIV,2,DIV,0,UL",
+              "snippet": "<ul class=\"mvp-post-soc-list left relative\">",
+              "explanation": "Fix all of the following:\n  List element has direct children that are not allowed inside <li> elements"
+            }
+          }
+        ],
+        "impact": "serious",
+        "tags": [
+          "cat.structure",
+          "wcag2a",
+          "wcag131"
+        ]
+      }
+    },
+    "listitem": {
+      "id": "listitem",
+      "title": "List items (`<li>`) are not contained within `<ul>` or `<ol>` parent elements.",
+      "description": "Screen readers require list items (`<li>`) to be contained within a parent `<ul>` or `<ol>` to be announced properly. [Learn more](https://dequeuniversity.com/rules/axe/2.2/listitem?application=lighthouse).",
+      "score": 0,
+      "scoreDisplayMode": "binary",
+      "rawValue": false,
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "key": "node",
+            "itemType": "node",
+            "text": "Failing Elements"
+          }
+        ],
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "selector": ":root > .mvp-post-soc-fb",
+              "path": "1,HTML,1,BODY,2,DIV,0,HEADER,4,DIV,0,DIV,0,DIV,0,DIV,2,DIV,0,UL,0,A,0,LI",
+              "snippet": "<li class=\"mvp-post-soc-fb\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-facebook-square fa-2\" aria-hidden=\"true\"></i><span class=\"mvp-post-soc-text\">Share</span>\n\t\t\t\t\t\t\t\t\t\t\t\t</li>",
+              "explanation": "Fix any of the following:\n  List item does not have a <ul>, <ol> or role=\"list\" parent element"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": ":root > .mvp-post-soc-twit",
+              "path": "1,HTML,1,BODY,2,DIV,0,HEADER,4,DIV,0,DIV,0,DIV,0,DIV,2,DIV,0,UL,1,A,0,LI",
+              "snippet": "<li class=\"mvp-post-soc-twit\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-twitter fa-2\" aria-hidden=\"true\"></i><span class=\"mvp-post-soc-text\">Tweet</span>\n\t\t\t\t\t\t\t\t\t\t\t\t</li>",
+              "explanation": "Fix any of the following:\n  List item does not have a <ul>, <ol> or role=\"list\" parent element"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": "#mvp-nav-soc-list > .mvp-post-soc-list > a:nth-child(3) > .mvp-post-soc-what",
+              "path": "1,HTML,1,BODY,2,DIV,0,HEADER,4,DIV,0,DIV,0,DIV,0,DIV,2,DIV,0,UL,2,A,0,LI",
+              "snippet": "<li class=\"mvp-post-soc-what\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-whatsapp fa-2\" aria-hidden=\"true\"></i>\n\t\t\t\t\t\t\t\t\t\t\t\t</li>",
+              "explanation": "Fix any of the following:\n  List item does not have a <ul>, <ol> or role=\"list\" parent element"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": ":root > .mvp-post-soc-pin",
+              "path": "1,HTML,1,BODY,2,DIV,0,HEADER,4,DIV,0,DIV,0,DIV,0,DIV,2,DIV,0,UL,3,A,0,LI",
+              "snippet": "<li class=\"mvp-post-soc-pin\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-pinterest-p fa-2\" aria-hidden=\"true\"></i>\n\t\t\t\t\t\t\t\t\t\t\t\t</li>",
+              "explanation": "Fix any of the following:\n  List item does not have a <ul>, <ol> or role=\"list\" parent element"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": "#mvp-nav-soc-list > .mvp-post-soc-list > a:nth-child(5) > .mvp-post-soc-email",
+              "path": "1,HTML,1,BODY,2,DIV,0,HEADER,4,DIV,0,DIV,0,DIV,0,DIV,2,DIV,0,UL,4,A,0,LI",
+              "snippet": "<li class=\"mvp-post-soc-email\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-envelope-o fa-2\" aria-hidden=\"true\"></i>\n\t\t\t\t\t\t\t\t\t\t\t\t</li>",
+              "explanation": "Fix any of the following:\n  List item does not have a <ul>, <ol> or role=\"list\" parent element"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": ":root > .mvp-post-soc-fb",
+              "path": "1,HTML,1,BODY,2,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,ARTICLE,3,DIV,0,DIV,2,DIV,0,DIV,0,HEADER,3,DIV,2,DIV,0,UL,0,A,0,LI",
+              "snippet": "<li class=\"mvp-post-soc-fb\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-facebook-square fa-2\" aria-hidden=\"true\"></i><span class=\"mvp-post-soc-text\">Share</span>\n\t\t\t\t\t\t\t\t\t\t\t\t</li>",
+              "explanation": "Fix any of the following:\n  List item does not have a <ul>, <ol> or role=\"list\" parent element"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": ":root > .mvp-post-soc-twit",
+              "path": "1,HTML,1,BODY,2,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,ARTICLE,3,DIV,0,DIV,2,DIV,0,DIV,0,HEADER,3,DIV,2,DIV,0,UL,1,A,0,LI",
+              "snippet": "<li class=\"mvp-post-soc-twit\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-twitter fa-2\" aria-hidden=\"true\"></i><span class=\"mvp-post-soc-text\">Tweet</span>\n\t\t\t\t\t\t\t\t\t\t\t\t</li>",
+              "explanation": "Fix any of the following:\n  List item does not have a <ul>, <ol> or role=\"list\" parent element"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": "#mvp-post-info-bot > .mvp-post-soc-list > a:nth-child(3) > .mvp-post-soc-what",
+              "path": "1,HTML,1,BODY,2,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,ARTICLE,3,DIV,0,DIV,2,DIV,0,DIV,0,HEADER,3,DIV,2,DIV,0,UL,2,A,0,LI",
+              "snippet": "<li class=\"mvp-post-soc-what\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-whatsapp fa-2\" aria-hidden=\"true\"></i>\n\t\t\t\t\t\t\t\t\t\t\t\t</li>",
+              "explanation": "Fix any of the following:\n  List item does not have a <ul>, <ol> or role=\"list\" parent element"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": ":root > .mvp-post-soc-pin",
+              "path": "1,HTML,1,BODY,2,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,ARTICLE,3,DIV,0,DIV,2,DIV,0,DIV,0,HEADER,3,DIV,2,DIV,0,UL,3,A,0,LI",
+              "snippet": "<li class=\"mvp-post-soc-pin\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-pinterest-p fa-2\" aria-hidden=\"true\"></i>\n\t\t\t\t\t\t\t\t\t\t\t\t</li>",
+              "explanation": "Fix any of the following:\n  List item does not have a <ul>, <ol> or role=\"list\" parent element"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": "#mvp-post-info-bot > .mvp-post-soc-list > a:nth-child(5) > .mvp-post-soc-email",
+              "path": "1,HTML,1,BODY,2,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,ARTICLE,3,DIV,0,DIV,2,DIV,0,DIV,0,HEADER,3,DIV,2,DIV,0,UL,4,A,0,LI",
+              "snippet": "<li class=\"mvp-post-soc-email\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-envelope-o fa-2\" aria-hidden=\"true\"></i>\n\t\t\t\t\t\t\t\t\t\t\t\t</li>",
+              "explanation": "Fix any of the following:\n  List item does not have a <ul>, <ol> or role=\"list\" parent element"
+            }
+          },
+          {
+            "node": {
+              "type": "node",
+              "selector": ".mvp-post-soc-comm",
+              "path": "1,HTML,1,BODY,2,DIV,2,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,DIV,0,ARTICLE,3,DIV,0,DIV,2,DIV,0,DIV,0,HEADER,3,DIV,2,DIV,0,UL,5,A,0,LI",
+              "snippet": "<li class=\"mvp-post-soc-comm mvp-com-click\">\n\t\t\t\t\t\t\t\t\t\t\t\t\t\t<i class=\"fa fa-comment-o fa-2\" aria-hidden=\"true\"></i><span class=\"mvp-post-soc-text\">Comment</span>\n\t\t\t\t\t\t\t\t\t\t\t\t\t</li>",
+              "explanation": "Fix any of the following:\n  List item does not have a <ul>, <ol> or role=\"list\" parent element"
+            }
+          }
+        ],
+        "impact": "serious",
+        "tags": [
+          "cat.structure",
+          "wcag2a",
+          "wcag131"
+        ]
+      }
+    },
+    "meta-refresh": {
+      "id": "meta-refresh",
+      "title": "The document does not use `<meta http-equiv=\"refresh\">`",
+      "description": "Users do not expect a page to refresh automatically, and doing so will move focus back to the top of the page. This may create a frustrating or confusing experience. [Learn more](https://dequeuniversity.com/rules/axe/2.2/meta-refresh?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "not-applicable",
+      "rawValue": true
+    },
+    "meta-viewport": {
+      "id": "meta-viewport",
+      "title": "`[user-scalable=\"no\"]` is used in the `<meta name=\"viewport\">` element or the `[maximum-scale]` attribute is less than 5.",
+      "description": "Disabling zooming is problematic for users with low vision who rely on screen magnification to properly see the contents of a web page. [Learn more](https://dequeuniversity.com/rules/axe/2.2/meta-viewport?application=lighthouse).",
+      "score": 0,
+      "scoreDisplayMode": "binary",
+      "rawValue": false,
+      "details": {
+        "type": "table",
+        "headings": [
+          {
+            "key": "node",
+            "itemType": "node",
+            "text": "Failing Elements"
+          }
+        ],
+        "items": [
+          {
+            "node": {
+              "type": "node",
+              "selector": "#viewport",
+              "path": "1,HTML,0,HEAD,1,META",
+              "snippet": "<meta name=\"viewport\" id=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no\">",
+              "explanation": "Fix any of the following:\n  <meta> tag disables zooming on mobile devices"
+            }
+          }
+        ],
+        "impact": "critical",
+        "tags": [
+          "cat.sensory-and-visual-cues",
+          "wcag2aa",
+          "wcag144"
+        ]
+      }
+    },
+    "object-alt": {
+      "id": "object-alt",
+      "title": "`<object>` elements have `[alt]` text",
+      "description": "Screen readers cannot translate non-text content. Adding alt text to `<object>` elements helps screen readers convey meaning to users. [Learn more](https://dequeuniversity.com/rules/axe/2.2/object-alt?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "not-applicable",
+      "rawValue": true
+    },
+    "tabindex": {
+      "id": "tabindex",
+      "title": "No element has a `[tabindex]` value greater than 0",
+      "description": "A value greater than 0 implies an explicit navigation ordering. Although technically valid, this often creates frustrating experiences for users who rely on assistive technologies. [Learn more](https://dequeuniversity.com/rules/axe/2.2/tabindex?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "not-applicable",
+      "rawValue": true
+    },
+    "td-headers-attr": {
+      "id": "td-headers-attr",
+      "title": "Cells in a `<table>` element that use the `[headers]` attribute only refer to other cells of that same table.",
+      "description": "Screen readers have features to make navigating tables easier. Ensuring `<td>` cells using the `[headers]` attribute only refer to other cells in the same table may improve the experience for screen reader users. [Learn more](https://dequeuniversity.com/rules/axe/2.2/td-headers-attr?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "not-applicable",
+      "rawValue": true
+    },
+    "th-has-data-cells": {
+      "id": "th-has-data-cells",
+      "title": "`<th>` elements and elements with `[role=\"columnheader\"/\"rowheader\"]` have data cells they describe.",
+      "description": "Screen readers have features to make navigating tables easier. Ensuring table headers always refer to some set of cells may improve the experience for screen reader users. [Learn more](https://dequeuniversity.com/rules/axe/2.2/th-has-data-cells?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "not-applicable",
+      "rawValue": true
+    },
+    "valid-lang": {
+      "id": "valid-lang",
+      "title": "`[lang]` attributes have a valid value",
+      "description": "Specifying a valid [BCP 47 language](https://www.w3.org/International/questions/qa-choosing-language-tags#question) on elements helps ensure that text is pronounced correctly by a screen reader. [Learn more](https://dequeuniversity.com/rules/axe/2.2/valid-lang?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "not-applicable",
+      "rawValue": true
+    },
+    "video-caption": {
+      "id": "video-caption",
+      "title": "`<video>` elements contain a `<track>` element with `[kind=\"captions\"]`",
+      "description": "When a video provides a caption it is easier for deaf and hearing impaired users to access its information. [Learn more](https://dequeuniversity.com/rules/axe/2.2/video-caption?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "not-applicable",
+      "rawValue": true
+    },
+    "video-description": {
+      "id": "video-description",
+      "title": "`<video>` elements contain a `<track>` element with `[kind=\"description\"]`",
+      "description": "Audio descriptions provide relevant information for videos that dialogue cannot, such as facial expressions and scenes. [Learn more](https://dequeuniversity.com/rules/axe/2.2/video-description?application=lighthouse).",
+      "score": null,
+      "scoreDisplayMode": "not-applicable",
+      "rawValue": true
+    },
+    "custom-controls-labels": {
+      "id": "custom-controls-labels",
+      "title": "Custom controls have associated labels",
+      "description": "Custom interactive controls have associated labels, provided by aria-label or aria-labelledby. [Learn more](https://developers.google.com/web/fundamentals/accessibility/how-to-review#try_it_with_a_screen_reader).",
+      "score": null,
+      "scoreDisplayMode": "manual",
+      "rawValue": false
+    },
+    "custom-controls-roles": {
+      "id": "custom-controls-roles",
+      "title": "Custom controls have ARIA roles",
+      "description": "Custom interactive controls have appropriate ARIA roles. [Learn more](https://developers.google.com/web/fundamentals/accessibility/how-to-review#try_it_with_a_screen_reader).",
+      "score": null,
+      "scoreDisplayMode": "manual",
+      "rawValue": false
+    },
+    "focus-traps": {
+      "id": "focus-traps",
+      "title": "User focus is not accidentally trapped in a region",
+      "description": "A user can tab into and out of any control or region without accidentally trapping their focus. [Learn more](https://developers.google.com/web/fundamentals/accessibility/how-to-review#start_with_the_keyboard).",
+      "score": null,
+      "scoreDisplayMode": "manual",
+      "rawValue": false
+    },
+    "focusable-controls": {
+      "id": "focusable-controls",
+      "title": "Interactive controls are keyboard focusable",
+      "description": "Custom interactive controls are keyboard focusable and display a focus indicator. [Learn more](https://developers.google.com/web/fundamentals/accessibility/how-to-review#start_with_the_keyboard).",
+      "score": null,
+      "scoreDisplayMode": "manual",
+      "rawValue": false
+    },
+    "heading-levels": {
+      "id": "heading-levels",
+      "title": "Headings don't skip levels",
+      "description": "Headings are used to create an outline for the page and heading levels are not skipped. [Learn more](https://developers.google.com/web/fundamentals/accessibility/how-to-review#take_advantage_of_headings_and_landmarks).",
+      "score": null,
+      "scoreDisplayMode": "manual",
+      "rawValue": false
+    },
+    "interactive-element-affordance": {
+      "id": "interactive-element-affordance",
+      "title": "Interactive elements indicate their purpose and state",
+      "description": "Interactive elements, such as links and buttons, should indicate their state and be distinguishable from non-interactive elements. [Learn more](https://developers.google.com/web/fundamentals/accessibility/how-to-review#interactive_elements_like_links_and_buttons_should_indicate_their_purpose_and_state).",
+      "score": null,
+      "scoreDisplayMode": "manual",
+      "rawValue": false
+    },
+    "logical-tab-order": {
+      "id": "logical-tab-order",
+      "title": "The page has a logical tab order",
+      "description": "Tabbing through the page follows the visual layout. Users cannot focus elements that are offscreen. [Learn more](https://developers.google.com/web/fundamentals/accessibility/how-to-review#start_with_the_keyboard).",
+      "score": null,
+      "scoreDisplayMode": "manual",
+      "rawValue": false
+    },
+    "managed-focus": {
+      "id": "managed-focus",
+      "title": "The user's focus is directed to new content added to the page",
+      "description": "If new content, such as a dialog, is added to the page, the user's focus is directed to it. [Learn more](https://developers.google.com/web/fundamentals/accessibility/how-to-review#start_with_the_keyboard).",
+      "score": null,
+      "scoreDisplayMode": "manual",
+      "rawValue": false
+    },
+    "offscreen-content-hidden": {
+      "id": "offscreen-content-hidden",
+      "title": "Offscreen content is hidden from assistive technology",
+      "description": "Offscreen content is hidden with display: none or aria-hidden=true. [Learn more](https://developers.google.com/web/fundamentals/accessibility/how-to-review#try_it_with_a_screen_reader).",
+      "score": null,
+      "scoreDisplayMode": "manual",
+      "rawValue": false
+    },
+    "use-landmarks": {
+      "id": "use-landmarks",
+      "title": "HTML5 landmark elements are used to improve navigation",
+      "description": "Landmark elements (<main>, <nav>, etc.) are used to improve the keyboard navigation of the page for assistive technology. [Learn more](https://developers.google.com/web/fundamentals/accessibility/how-to-review#take_advantage_of_headings_and_landmarks).",
+      "score": null,
+      "scoreDisplayMode": "manual",
+      "rawValue": false
+    },
+    "visual-order-follows-dom": {
+      "id": "visual-order-follows-dom",
+      "title": "Visual order on the page follows DOM order",
+      "description": "DOM order matches the visual order, improving navigation for assistive technology. [Learn more](https://developers.google.com/web/fundamentals/accessibility/how-to-review#try_it_with_a_screen_reader).",
+      "score": null,
+      "scoreDisplayMode": "manual",
+      "rawValue": false
+    }
+  },
+  "configSettings": {
+    "output": "json",
+    "maxWaitForLoad": 45000,
+    "throttlingMethod": "simulate",
+    "throttling": {
+      "rttMs": 150,
+      "throughputKbps": 1638.4,
+      "requestLatencyMs": 562.5,
+      "downloadThroughputKbps": 1474.5600000000002,
+      "uploadThroughputKbps": 675,
+      "cpuSlowdownMultiplier": 4
+    },
+    "auditMode": false,
+    "gatherMode": false,
+    "disableStorageReset": false,
+    "disableDeviceEmulation": false,
+    "emulatedFormFactor": "mobile",
+    "locale": "en-US",
+    "blockedUrlPatterns": null,
+    "additionalTraceCategories": null,
+    "extraHeaders": null,
+    "onlyAudits": null,
+    "onlyCategories": [
+      "accessibility"
+    ],
+    "skipAudits": null
+  },
+  "categories": {
+    "accessibility": {
+      "title": "Accessibility",
+      "description": "These checks highlight opportunities to [improve the accessibility of your web app](https://developers.google.com/web/fundamentals/accessibility). Only a subset of accessibility issues can be automatically detected so manual testing is also encouraged.",
+      "manualDescription": "These items address areas which an automated testing tool cannot cover. Learn more in our guide on [conducting an accessibility review](https://developers.google.com/web/fundamentals/accessibility/how-to-review).",
+      "auditRefs": [
+        {
+          "id": "accesskeys",
+          "weight": 0,
+          "group": "a11y-correct-attributes"
+        },
+        {
+          "id": "aria-allowed-attr",
+          "weight": 0,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "aria-required-attr",
+          "weight": 0,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "aria-required-children",
+          "weight": 0,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "aria-required-parent",
+          "weight": 0,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "aria-roles",
+          "weight": 0,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "aria-valid-attr-value",
+          "weight": 0,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "aria-valid-attr",
+          "weight": 0,
+          "group": "a11y-aria"
+        },
+        {
+          "id": "audio-caption",
+          "weight": 0,
+          "group": "a11y-correct-attributes"
+        },
+        {
+          "id": "button-name",
+          "weight": 0,
+          "group": "a11y-element-names"
+        },
+        {
+          "id": "bypass",
+          "weight": 10,
+          "group": "a11y-describe-contents"
+        },
+        {
+          "id": "color-contrast",
+          "weight": 6,
+          "group": "a11y-color-contrast"
+        },
+        {
+          "id": "definition-list",
+          "weight": 0,
+          "group": "a11y-well-structured"
+        },
+        {
+          "id": "dlitem",
+          "weight": 0,
+          "group": "a11y-well-structured"
+        },
+        {
+          "id": "document-title",
+          "weight": 2,
+          "group": "a11y-describe-contents"
+        },
+        {
+          "id": "duplicate-id",
+          "weight": 5,
+          "group": "a11y-well-structured"
+        },
+        {
+          "id": "frame-title",
+          "weight": 5,
+          "group": "a11y-describe-contents"
+        },
+        {
+          "id": "html-has-lang",
+          "weight": 4,
+          "group": "a11y-language"
+        },
+        {
+          "id": "html-lang-valid",
+          "weight": 1,
+          "group": "a11y-language"
+        },
+        {
+          "id": "image-alt",
+          "weight": 8,
+          "group": "a11y-correct-attributes"
+        },
+        {
+          "id": "input-image-alt",
+          "weight": 0,
+          "group": "a11y-correct-attributes"
+        },
+        {
+          "id": "label",
+          "weight": 10,
+          "group": "a11y-describe-contents"
+        },
+        {
+          "id": "layout-table",
+          "weight": 0,
+          "group": "a11y-describe-contents"
+        },
+        {
+          "id": "link-name",
+          "weight": 9,
+          "group": "a11y-element-names"
+        },
+        {
+          "id": "list",
+          "weight": 5,
+          "group": "a11y-well-structured"
+        },
+        {
+          "id": "listitem",
+          "weight": 4,
+          "group": "a11y-well-structured"
+        },
+        {
+          "id": "meta-refresh",
+          "weight": 0,
+          "group": "a11y-meta"
+        },
+        {
+          "id": "meta-viewport",
+          "weight": 3,
+          "group": "a11y-meta"
+        },
+        {
+          "id": "object-alt",
+          "weight": 0,
+          "group": "a11y-describe-contents"
+        },
+        {
+          "id": "tabindex",
+          "weight": 0,
+          "group": "a11y-correct-attributes"
+        },
+        {
+          "id": "td-headers-attr",
+          "weight": 0,
+          "group": "a11y-correct-attributes"
+        },
+        {
+          "id": "th-has-data-cells",
+          "weight": 0,
+          "group": "a11y-correct-attributes"
+        },
+        {
+          "id": "valid-lang",
+          "weight": 0,
+          "group": "a11y-language"
+        },
+        {
+          "id": "video-caption",
+          "weight": 0,
+          "group": "a11y-describe-contents"
+        },
+        {
+          "id": "video-description",
+          "weight": 0,
+          "group": "a11y-describe-contents"
+        },
+        {
+          "id": "logical-tab-order",
+          "weight": 0
+        },
+        {
+          "id": "focusable-controls",
+          "weight": 0
+        },
+        {
+          "id": "interactive-element-affordance",
+          "weight": 0
+        },
+        {
+          "id": "managed-focus",
+          "weight": 0
+        },
+        {
+          "id": "focus-traps",
+          "weight": 0
+        },
+        {
+          "id": "custom-controls-labels",
+          "weight": 0
+        },
+        {
+          "id": "custom-controls-roles",
+          "weight": 0
+        },
+        {
+          "id": "visual-order-follows-dom",
+          "weight": 0
+        },
+        {
+          "id": "offscreen-content-hidden",
+          "weight": 0
+        },
+        {
+          "id": "heading-levels",
+          "weight": 0
+        },
+        {
+          "id": "use-landmarks",
+          "weight": 0
+        }
+      ],
+      "id": "accessibility",
+      "score": 0.35
+    }
+  },
+  "categoryGroups": {
+    "metrics": {
+      "title": "Metrics"
+    },
+    "load-opportunities": {
+      "title": "Opportunities",
+      "description": "These optimizations can speed up your page load."
+    },
+    "diagnostics": {
+      "title": "Diagnostics",
+      "description": "More information about the performance of your application."
+    },
+    "a11y-color-contrast": {
+      "title": "Color Contrast Is Satisfactory",
+      "description": "These are opportunities to improve the legibility of your content."
+    },
+    "a11y-describe-contents": {
+      "title": "Elements Describe Contents Well",
+      "description": "These are opportunities to make your content easier to understand for a user of assistive technology, like a screen reader."
+    },
+    "a11y-well-structured": {
+      "title": "Elements Are Well Structured",
+      "description": "These are opportunities to make sure your HTML is appropriately structured."
+    },
+    "a11y-aria": {
+      "title": "ARIA Attributes Follow Best Practices",
+      "description": "These are opportunities to improve the usage of ARIA in your application which may enhance the experience for users of assistive technology, like a screen reader."
+    },
+    "a11y-correct-attributes": {
+      "title": "Elements Use Attributes Correctly",
+      "description": "These are opportunities to improve the configuration of your HTML elements."
+    },
+    "a11y-element-names": {
+      "title": "Elements Have Discernible Names",
+      "description": "These are opportunities to improve the semantics of the controls in your application. This may enhance the experience for users of assistive technology, like a screen reader."
+    },
+    "a11y-language": {
+      "title": "Page Specifies Valid Language",
+      "description": "These are opportunities to improve the interpretation of your content by users in different locales."
+    },
+    "a11y-meta": {
+      "title": "Meta Tags Used Properly",
+      "description": "These are opportunities to improve the user experience of your site."
+    },
+    "seo-mobile": {
+      "title": "Mobile Friendly",
+      "description": "Make sure your pages are mobile friendly so users don’t have to pinch or zoom in order to read the content pages. [Learn more](https://developers.google.com/search/mobile-sites/)."
+    },
+    "seo-content": {
+      "title": "Content Best Practices",
+      "description": "Format your HTML in a way that enables crawlers to better understand your app’s content."
+    },
+    "seo-crawl": {
+      "title": "Crawling and Indexing",
+      "description": "To appear in search results, crawlers need access to your app."
+    }
+  },
+  "timing": {
+    "total": 6306
+  },
+  "i18n": {
+    "rendererFormattedStrings": {
+      "auditGroupExpandTooltip": "Show audits",
+      "crcInitialNavigation": "Initial Navigation",
+      "crcLongestDurationLabel": "Maximum critical path latency:",
+      "errorLabel": "Error!",
+      "errorMissingAuditInfo": "Report error: no audit information",
+      "labDataTitle": "Lab Data",
+      "lsPerformanceCategoryDescription": "[Lighthouse](https://developers.google.com/web/tools/lighthouse/) analysis of the current page on emulated 3G. Values are estimated and may vary.",
+      "manualAuditsGroupTitle": "Additional items to manually check",
+      "notApplicableAuditsGroupTitle": "Not applicable",
+      "opportunityResourceColumnLabel": "Opportunity",
+      "opportunitySavingsColumnLabel": "Estimated Savings",
+      "passedAuditsGroupTitle": "Passed audits",
+      "scorescaleLabel": "Score scale:",
+      "toplevelWarningsMessage": "There were issues affecting this run of Lighthouse:",
+      "varianceDisclaimer": "Values are estimated and may vary.",
+      "warningHeader": "Warnings: "
+    },
+    "icuMessagePaths": {
+      "lighthouse-core/config/default-config.js | metricGroupTitle": [
+        "categoryGroups.metrics.title"
+      ],
+      "lighthouse-core/config/default-config.js | loadOpportunitiesGroupTitle": [
+        "categoryGroups[load-opportunities].title"
+      ],
+      "lighthouse-core/config/default-config.js | loadOpportunitiesGroupDescription": [
+        "categoryGroups[load-opportunities].description"
+      ],
+      "lighthouse-core/config/default-config.js | diagnosticsGroupTitle": [
+        "categoryGroups.diagnostics.title"
+      ],
+      "lighthouse-core/config/default-config.js | diagnosticsGroupDescription": [
+        "categoryGroups.diagnostics.description"
+      ]
+    }
+  }
+}

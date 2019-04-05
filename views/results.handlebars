@@ -1,13 +1,14 @@
 <h1>LightReader Results<br>
   <small class="text-muted">The following pages scored below 100% </small>
 </h1>
+{{#if reports}}
 <p><span class="label label-pill label-primary">{{average pageScores}}%</span> Overall score <span class="label label-pill label-danger">{{failTotal}} / {{reportTotal}}</span> failed reports</p>
 <hr>
 <div class="container-fluid">
   {{#if status}}
     <em>{{status}}</em>
   {{/if}}
-  {{#if reports}}
+
       {{#each reports}}
         <section class="row">
             <div class="col-md-8">
@@ -46,5 +47,9 @@
         </section>
         <hr>
       {{/each}}
-  {{/if}}
 </div>
+{{else}}
+<div class="alert alert-warning" role="alert">
+  No reports found. Please add your reports to the /reports directory.
+</div>
+{{/if}}
