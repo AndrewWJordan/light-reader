@@ -81,13 +81,13 @@ router.get('/results', (req, res) => {
       callback(null)
     },
     function(callback) {
-      
+
       // generate CSV file in reports folder from reports object
       var csvStream = csv.format({headers: true}),
       writableStream = fs.createWriteStream("light-reader-results.csv");
 
       writableStream.on("finish", function(){
-        console.log( emoji.emojify(":sun_with_face:") + " " + emoji.emojify(":doughnut:") + " Failed report CSV created for your convenience.")
+        console.log( emoji.emojify(":sun_with_face:") + " " + emoji.emojify(":doughnut:") + " CSV created for your convenience.")
         callback(null)
       });
 
@@ -95,7 +95,7 @@ router.get('/results', (req, res) => {
 
       viewModel.reports.forEach(function(report, index) {
          if(report.url) {
-          csvStream.write({url: report.url, score: report.score})
+          csvStream.write({url: report.url, messages: report.message, details: report.detail, score: report.score})
          } else {
           console.log("There was an issue locating the report URL while generating the CSV.")
          }
