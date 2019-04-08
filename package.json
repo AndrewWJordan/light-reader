@@ -4,7 +4,7 @@
   "description": "Reads and extracts Lighthouse report data from JSON files.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha",
     "start": "nodemon server.js"
   },
   "author": "Andrew Jordan",
@@ -20,5 +20,10 @@
     "node-emoji": "^1.8.1",
     "nodemon": "^1.18.9",
     "url": "^0.11.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "chai-http": "^4.2.1",
+    "mocha": "^6.1.1"
   }
 }

@@ -1,3 +1,5 @@
+"use strict"
+
 const express = require('express')
 const app = express()
 const hbs  = require('express-handlebars')
@@ -31,4 +33,4 @@ app.engine('handlebars', hbs({
 
 app.set('view engine', 'handlebars')
 
-app.listen(port, () => console.log(emoji.emojify(`:books: LightReader is listening on port ${port}!`)))
+module.exports = app.listen(port, () => console.log(emoji.emojify(`:books:  LightReader is listening on port ${port}!`)))
